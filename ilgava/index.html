@@ -4,349 +4,598 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta name="build" content="20261028123028">
 <title>Ilgava: langų gamyba Klaipėdoje</title>
-<meta name="description" content="Ilgava gamina langus Klaipėdoje. Aprašykite savo poreikį ir gaukite pasiūlymą namo, buto ar kito pastato langams.">
+<meta name="description" content="UAB „Ilgava“ Klaipėdoje gamina langus namams, butams ir verslo patalpoms pagal užsakymą. Matavimas ir konsultacija. Tel. +370 683 56756.">
 <link rel="canonical" href="https://vasylian.com/svetaine/ilgava/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="lt_LT">
 <meta property="og:site_name" content="Ilgava">
 <meta property="og:title" content="Ilgava: langų gamyba Klaipėdoje">
-<meta property="og:description" content="Ilgava gamina langus Klaipėdoje. Aprašykite savo poreikį ir gaukite pasiūlymą namo, buto ar kito pastato langams.">
+<meta property="og:description" content="Langai pagal jūsų matmenis. Namams, butams ir verslo patalpoms. Tel. +370 683 56756.">
 <meta property="og:url" content="https://vasylian.com/svetaine/ilgava/">
-<meta property="og:image" content="https://vasylian.com/svetaine/lib/p/5691544-og.jpg">
+<meta property="og:image" content="https://vasylian.com/svetaine/ilgava/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta name="theme-color" content="#151618">
+<meta name="theme-color" content="#0E0D0B">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="preload" href="../lib/f/bigshoulders-display.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../lib/f/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" imagesrcset="../lib/p/5691544-l-640.webp 640w, ../lib/p/5691544-l-800.webp 800w, ../lib/p/5691544-l-1024.webp 1024w, ../lib/p/5691544-l-1600.webp 1600w" imagesizes="100vw" media="(max-width: 899px)">
+<link rel="preload" href="fonts/bricolage-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrumentsans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" imagesrcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-1000.webp 1000w, img/hero-1280.webp 1280w" imagesizes="(min-width: 760px) 44vw, calc(100vw - 74px)" fetchpriority="high">
+<script>document.documentElement.className+=' js'</script>
 <style>
-@font-face{font-family:"Big Shoulders";src:url(../lib/f/bigshoulders-display.woff2) format("woff2");font-weight:500 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Barlow";src:url(../lib/f/barlow-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Barlow";src:url(../lib/f/barlow-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Barlow";src:url(../lib/f/barlow-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
-:root{ --bg:#f2f0ea;--ink:#151618;--muted:#5c5e62;--line:#d9d5cc;--soft:#e8e4da;--slab:#151618;--slab-ink:#f2f0ea;--slab-line:rgba(242,240,234,.16);--cta:#f4c400;--cta-ink:#151618;--mark:#f4c400;--accent-num:#151618;--ph-bg:#2a2b2e; }
+@font-face{font-family:"Bricolage";src:url(fonts/bricolage-var.woff2) format("woff2");font-weight:500 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument";src:url(fonts/instrumentsans.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(fonts/plexmono-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+:root{
+  --wall:#0E0D0B;--body:#191917;--body2:#23221F;--tan:#C4A369;--tan-ink:#765B2B;--yellow:#F2C300;--yellow-hi:#FFD21F;
+  --paper:#F3ECDD;--paper2:#E9DFCA;--ink:#191917;--on-dark:#EFE8D8;--soft-dark:#B9AF9B;--soft-paper:#554C41;
+  --line-dark:rgba(196,163,105,.3);--line-paper:rgba(25,25,23,.22);
+  --hdr:64px;--pad:clamp(20px,5vw,64px);--max:1320px;
+  --f-d:"Bricolage","Arial Narrow",system-ui,sans-serif;--f-t:"Instrument",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--f-m:"Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;min-width:320px;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-img{display:block;max-width:100%;height:auto}
+body{margin:0;min-width:320px;background:var(--wall);color:var(--on-dark);font:400 17px/1.6 var(--f-t);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+img{height:auto}
 a{color:inherit}
-h1,h2,h3,h4,p,ol,ul,dl,dd,figure,blockquote{margin:0}
+h1,h2,h3,h4,p,ol,ul,dl,dd,figure{margin:0}
 ol,ul{padding:0;list-style:none}
-button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
-:focus-visible{outline:2px solid var(--focus,currentColor);outline-offset:3px}
-[id]{scroll-margin-top:calc(var(--hdr,64px) + 16px)}
-.skip{position:absolute;left:12px;top:-60px;z-index:200;padding:10px 14px;background:var(--ink);color:var(--bg);text-decoration:none}
-.skip:focus{top:12px}
+button,input,textarea{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+::selection{background:var(--yellow);color:var(--ink)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+[id]{scroll-margin-top:calc(var(--hdr) + 8px)}
 .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.mail-fallback{font-size:.9em;line-height:1.5;margin-top:14px;opacity:.85}
-.mail-addr{font-weight:600;user-select:all;overflow-wrap:anywhere}
-.ph{position:relative;overflow:hidden;background:var(--ph-bg,rgba(127,127,127,.18))}
-.ph img{width:100%;height:100%;object-fit:cover}
-.burger{display:none;position:relative;width:48px;height:48px;margin-right:-8px;flex:none}
-.burger span,.burger span::before,.burger span::after{position:absolute;left:12px;width:24px;height:2px;background:currentColor;transition:transform .2s ease,opacity .2s ease}
-.burger span{top:23px}
+.skip{position:absolute;left:12px;top:-64px;z-index:300;padding:12px 16px;background:var(--yellow);color:var(--ink);font-weight:600;text-decoration:none}
+.skip:focus{top:10px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.mono{font:500 12px/1.3 var(--f-m);letter-spacing:.14em;text-transform:uppercase}
+
+/* window glyph: the logo's lit / dark window as a unit */
+.gl{display:inline-block;flex:none;width:11px;height:14px;border:2px solid var(--tan);background:transparent;position:relative;transform:skewY(-6deg)}
+.gl.lit{background:var(--yellow);border-color:var(--yellow)}
+
+/* ============ header ============ */
+.hdr{position:sticky;top:0;z-index:100;background:var(--wall);border-bottom:1px solid var(--line-dark)}
+.hdr-in{display:flex;align-items:center;gap:16px;height:var(--hdr)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.mark{width:42px;height:35px;--mb:#191917;--mt:#C4A369;--md:#191917;--ml:#F2C300;transition:--md .2s}
+.brand .wm{width:68px;height:auto}
+.brand:hover .mark,.brand:focus-visible .mark{--md:#F2C300}
+.nav{display:flex}
+.nav a{text-decoration:none;font:500 15px/1 var(--f-t);color:var(--on-dark);padding:15px 0}
+.hdr-call{margin-left:auto;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;background:var(--yellow);color:var(--ink);font:600 15px/1 var(--f-t);text-decoration:none}
+.hdr-call:hover{background:var(--yellow-hi)}
+.hdr-call svg{width:18px;height:18px;flex:none}
+.hdr-call .num{display:none}
+.burger{position:relative;width:46px;height:46px;flex:none;margin-right:-8px}
+.burger span,.burger span::before,.burger span::after{position:absolute;left:11px;width:24px;height:2px;background:var(--on-dark);transition:transform .2s,opacity .2s}
+.burger span{top:22px}
 .burger span::before,.burger span::after{content:"";left:0}
 .burger span::before{top:-7px}
 .burger span::after{top:7px}
 .menu-open .burger span{background:transparent}
 .menu-open .burger span::before{transform:translateY(7px) rotate(45deg)}
 .menu-open .burger span::after{transform:translateY(-7px) rotate(-45deg)}
-@media (max-width:899px){
-.burger{display:block}
-.nav{position:fixed;left:0;right:0;top:var(--hdr,64px);bottom:0;z-index:90;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px var(--pad,16px) 32px;overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
-.menu-open .nav{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
-.menu-open{overflow:hidden}
+@media (max-width:999px){
+  .nav{position:fixed;left:0;right:0;top:var(--hdr);bottom:0;z-index:90;flex-direction:column;justify-content:flex-start;gap:0;padding:18px var(--pad) 40px;background:var(--wall);overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility 0s linear .2s}
+  .menu-open .nav{visibility:visible;opacity:1;transform:none;transition:opacity .2s,transform .2s}
+  .menu-open{overflow:hidden}
+  .nav a{font:700 clamp(28px,8vw,40px)/1.1 var(--f-d);padding:16px 0;border-bottom:1px solid var(--line-dark);letter-spacing:-.01em}
+  .nav a:hover{color:var(--yellow)}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-.ico{flex:none;display:inline-block;vertical-align:middle;transition:transform .15s ease}
-a:hover>.ico-e{transform:translateX(4px)}
-a:hover>.ico-ne{transform:translate(2px,-2px)}
-a:hover>.ico-down{transform:translateY(2px)}
-:root{--hdr:68px;--wrap:1280px;--pad:clamp(16px,4vw,48px);--f-display:"Big Shoulders",Impact,"Arial Narrow",sans-serif;--f-text:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--focus:var(--mark)}
-body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--f-text)}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 28px;font:600 16px/1.1 var(--f-text);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
-.btn-cta{background:var(--cta);color:var(--cta-ink)}
-.btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25)}
-.btn .arr{transition:transform .15s ease}
-.btn:hover .arr{transform:translateX(4px)}
-.btn-link{font:600 15px/1 var(--f-text);text-transform:uppercase;letter-spacing:.08em;text-decoration:none;padding:10px 0;border-bottom:2px solid currentColor}
-.btn-link:hover{opacity:.75}
-.hdr{position:sticky;top:0;z-index:100;background:var(--slab);color:var(--slab-ink);border-bottom:1px solid var(--slab-line)}
-.hdr-in{display:flex;align-items:center;gap:28px;height:var(--hdr)}
-.brand{display:flex;align-items:center;gap:14px;margin-right:auto;min-width:0;text-decoration:none}
-.brand-logo{display:block;flex:none;width:auto;height:48px}
-.brand-note{font:500 12px/1 var(--f-text);letter-spacing:.16em;text-transform:uppercase;opacity:.7;white-space:nowrap}
-.nav{display:flex;align-items:center;gap:30px}
-.nav a{font:500 15px/1 var(--f-text);letter-spacing:.04em;text-decoration:none}
-.nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
-.nav .btn{min-height:44px;padding:0 18px;font-size:14px}
-.hero{background:var(--slab);color:var(--slab-ink)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);min-height:clamp(560px,calc(100svh - var(--hdr) - 58px),860px)}
-.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:26px;padding:clamp(48px,6vw,96px) clamp(24px,4vw,64px) clamp(48px,5vw,80px) max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)))}
-.kicker{display:flex;align-items:center;gap:14px;font:600 13px/1.35 var(--f-text);letter-spacing:.2em;text-transform:uppercase}
-.kicker::before{content:"";flex:none;width:34px;height:4px;background:var(--mark)}
-.hero h1{font:800 clamp(56px,7.3vw,124px)/1.02 var(--f-display);text-transform:uppercase;letter-spacing:.005em;max-width:11.5ch;text-wrap:balance}
-.hero h1.t-long{font-size:clamp(50px,6.2vw,104px);max-width:13ch}
-.hero h1.t-xlong{font-size:clamp(44px,5.3vw,88px);max-width:15ch}
-.hero h1 em{font-style:normal;color:var(--mark)}
-.lead{max-width:33em;font:400 clamp(18px,1.45vw,21px)/1.5 var(--f-text);opacity:.88}
-.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px;margin-top:6px}
-.hero-photo{min-height:100%}
-.hero-photo picture,.hero-photo img{position:absolute;inset:0;width:100%;height:100%}
-.hero-photo img{object-fit:cover}
-.ticker{background:var(--cta);color:var(--cta-ink)}
-.ticker-in{display:flex;flex-wrap:wrap;align-items:center;min-height:58px;padding-top:12px;padding-bottom:12px;font:800 21px/1.2 var(--f-display);letter-spacing:.05em;text-transform:uppercase}
-.ticker-in span{white-space:nowrap}
-.ticker-in span+span::before{content:"/";margin:0 16px;opacity:.4}
-.facts{border-bottom:1px solid var(--line)}
-.facts-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.fact{padding:30px 28px 28px 0;border-right:1px solid var(--line)}
-.fact+.fact{padding-left:28px}
-.fact:last-child{border-right:0}
-.fact-k{font:600 12px/1.3 var(--f-text);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.fact-v{margin-top:10px;font:800 34px/1.06 var(--f-display);text-transform:uppercase;letter-spacing:.02em;overflow-wrap:anywhere}
-.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;padding:clamp(64px,8vw,120px) 0 clamp(32px,4vw,56px)}
-.sec-head h2,.about h2,.steps h2,.contact h2,.band-box h2{font:800 clamp(42px,5.2vw,84px)/1.02 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
-.sec-head p{max-width:34em;font-size:19px;color:var(--muted)}
-.svc-list{border-top:2px solid var(--ink);margin-bottom:clamp(64px,8vw,120px)}
-.svc-row{display:grid;grid-template-columns:96px minmax(0,1.05fr) minmax(0,1.3fr) 300px;gap:28px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);transition:background .2s ease}
-.svc-num{font:800 44px/1 var(--f-display);color:var(--accent-num)}
-.svc-row h3{font:800 clamp(28px,2.6vw,40px)/1.06 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
-.svc-text{color:var(--muted)}
-.svc-ph{aspect-ratio:3/2}
-.svc-ph img{transition:transform .5s ease}
-.svc-row:hover{background:var(--soft)}
-.svc-row:hover .svc-ph img{transform:scale(1.04)}
-.about{background:var(--soft)}
-.about-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);padding-top:clamp(64px,8vw,120px);padding-bottom:clamp(64px,8vw,120px)}
-.about-text{margin-top:28px;font:500 clamp(20px,1.7vw,24px)/1.5 var(--f-text)}
-.req{border-top:2px solid var(--ink)}
-.req-row{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.4fr);gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
-.req dt{font:600 12px/1.5 var(--f-text);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
-.req dd{font-weight:500;overflow-wrap:anywhere}
-.req dd li+li{margin-top:6px}
-.steps{background:var(--slab);color:var(--slab-ink);padding:clamp(64px,8vw,120px) 0}
-.steps-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:clamp(36px,5vw,64px);border-top:1px solid var(--slab-line)}
-.steps-list li{padding:28px 28px 8px 0;border-right:1px solid var(--slab-line)}
-.steps-list li+li{padding-left:28px}
-.steps-list li:last-child{border-right:0}
-.step-n{display:block;font:900 clamp(72px,7vw,112px)/.8 var(--f-display);color:var(--mark)}
-.steps-list h3{margin-top:22px;font:800 26px/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
-.steps-list p{margin-top:10px;opacity:.82}
-.gal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:clamp(64px,8vw,120px)}
-.gal-item{aspect-ratio:4/5}
-.band{position:relative}
-.band-ph{height:clamp(320px,44vw,600px)}
-.band-box-wrap{position:relative;margin-top:-120px}
-.band-box{position:relative;max-width:560px;padding:clamp(28px,3vw,44px);background:var(--cta);color:var(--cta-ink)}
-.band-box h2{font-size:clamp(36px,3.6vw,56px)}
-.band-box p{margin-top:16px;font-size:18px}
-.contact{padding:clamp(72px,9vw,140px) 0}
-.contact-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
-.contact-copy p{margin:22px 0 30px;max-width:30em;font-size:19px;color:var(--muted)}
-.contact .btn-cta{background:var(--slab);color:var(--slab-ink)}
-.contact-list{border-top:2px solid var(--ink)}
-.contact-list li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
-.cl-k{font:600 12px/1.4 var(--f-text);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.cl-v{font:800 clamp(24px,2.3vw,34px)/1.1 var(--f-display);letter-spacing:.01em;text-decoration:none;overflow-wrap:anywhere}
-a.cl-v:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
-.cl-addr{font:500 18px/1.45 var(--f-text);letter-spacing:0}
-.ftr{background:var(--slab);color:var(--slab-ink);padding:40px 0 48px;font-size:14px}
-.ftr-in{display:flex;flex-wrap:wrap;gap:8px 32px;align-items:baseline}
-.ftr-in p{opacity:.78}
-.ftr-brand{font:800 26px/1 var(--f-display);text-transform:uppercase;letter-spacing:.03em;opacity:1!important;margin-right:auto}
-@media (max-width:1100px){
-.svc-row{grid-template-columns:72px minmax(0,1fr) 240px}
-.svc-text{grid-column:2}
-.svc-ph{grid-column:3;grid-row:1 / span 2}
-.steps-list{grid-template-columns:repeat(2,minmax(0,1fr))}
-.steps-list li:nth-child(2){border-right:0}
-.steps-list li:nth-child(3){padding-left:0}
-.steps-list li:nth-child(n+3){border-top:1px solid var(--slab-line)}
+@media (min-width:1000px){
+  .burger{display:none}
+  .nav{gap:clamp(18px,2.2vw,34px);margin-left:auto}
+  .nav a{position:relative}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+  .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}
+  .hdr-call{margin-left:clamp(18px,2.2vw,34px)}
 }
-@media (max-width:899px){
-:root{--hdr:60px}
-.brand-logo{height:40px}
-.brand-note{display:none}
-.nav{background:var(--slab);color:var(--slab-ink)}
-.nav a{padding:18px 0;font-size:20px;border-bottom:1px solid var(--slab-line)}
-.nav .btn{margin-top:22px;min-height:54px;font-size:16px;border:0}
-.hero-grid{grid-template-columns:1fr;min-height:0}
-.hero-photo{order:-1;height:clamp(170px,48vw,340px);min-height:0}
-.hero-copy{gap:16px;padding:24px var(--pad) 30px}
-.kicker{font-size:12px;letter-spacing:.16em}
-.hero h1{font-size:clamp(44px,12.4vw,76px);max-width:none}
-.hero h1.t-long{font-size:clamp(40px,11vw,66px)}
-.hero h1.t-xlong{font-size:clamp(36px,9.6vw,58px)}
-.lead{font-size:17px}
-.hero-cta{gap:14px 24px;margin-top:2px}
-.hero-cta .btn{flex:1 1 100%}
-.ticker-in{font-size:17px;min-height:50px}
-.ticker-in span+span::before{margin:0 10px}
-.facts-in{grid-template-columns:1fr 1fr}
-.fact{padding:20px 14px 20px 0;border-right:0;border-bottom:1px solid var(--line)}
-.fact+.fact{padding-left:0}
-.fact:nth-child(2n){padding-left:14px;border-left:1px solid var(--line)}
-.fact-v{font-size:26px}
-.sec-head{grid-template-columns:1fr;padding:64px 0 28px}
-.sec-head p{font-size:17px}
-.svc-row{grid-template-columns:52px minmax(0,1fr);gap:10px 14px;padding:22px 0}
-.svc-num{font-size:32px}
-.svc-row h3{align-self:center}
-.svc-text{grid-column:1 / -1}
-.svc-ph{grid-column:1 / -1;grid-row:auto;order:-1}
-.about-in,.contact-in{grid-template-columns:1fr}
-.req-row{grid-template-columns:1fr;gap:4px}
-.steps-list{grid-template-columns:1fr}
-.steps-list li,.steps-list li+li{padding:24px 0;border-right:0;border-top:1px solid var(--slab-line)}
-.step-n{font-size:64px}
-.gal-grid{grid-template-columns:1fr 1fr;gap:8px}
-.band-ph{height:clamp(240px,64vw,420px)}
-.band-box-wrap{margin-top:-56px}
-.contact-list li{grid-template-columns:1fr;gap:6px}
-.contact .btn-cta{width:100%}
+@media (min-width:1220px){.hdr-call .num{display:inline}.hdr-call .lbl{display:none}}
+@media (max-width:389px){
+  .hdr-in{gap:8px}
+  .brand .wm{width:58px}
+  .brand{gap:8px}
+  .mark{width:38px;height:31px}
+  .hdr-call{padding:0;width:44px;justify-content:center}
+  .hdr-call .lbl{display:none}
+}
+
+/* ============ buttons ============ */
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:60px;padding:0 24px;border:2px solid transparent;font:600 16px/1.15 var(--f-t);text-decoration:none;transition:background .15s,color .15s,transform .15s,border-color .15s}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{background:var(--yellow-hi);transform:translateY(-2px)}
+.btn-y small{display:block;font:500 11px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;opacity:.78}
+.btn-y b{display:block;font:700 21px/1 var(--f-d);letter-spacing:.005em;white-space:nowrap}
+.btn-o{border-color:var(--tan);color:var(--on-dark)}
+.btn-o:hover{background:var(--tan);color:var(--ink)}
+.btn-k{background:var(--ink);color:var(--yellow);justify-content:center}
+.btn-k:hover{background:#000}
+
+/* ============ hero ============ */
+.hero{position:relative;padding:clamp(24px,4vw,52px) 0 clamp(44px,6vw,84px);overflow-x:clip}
+.hero-grid{display:grid;gap:14px;grid-template-areas:"copy" "plate" "facts"}
+.hero-copy{grid-area:copy}
+.plate{grid-area:plate}
+.facts{grid-area:facts}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--tan)}
+.dbr{display:none}
+.hero h1{margin-top:18px;font:700 clamp(2.6rem,6.6vw,6.4rem)/.96 var(--f-d);letter-spacing:-.025em;color:var(--on-dark);text-wrap:balance}
+.hero h1 .dim{position:relative;display:inline-block;color:var(--tan)}
+.hero h1 .dim::after{content:"";position:absolute;left:0;right:0;bottom:-.06em;height:0;border-bottom:2px solid var(--tan)}
+.hero h1 .dot{color:var(--yellow)}
+.lead{margin-top:20px;max-width:32em;font-size:clamp(16.5px,1.5vw,20px);line-height:1.5;color:#D8D0BD;text-wrap:pretty}
+.cta{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:26px}
+.cta .btn-o{min-height:52px}
+.facts{display:grid;grid-template-columns:minmax(0,1fr);align-self:end;margin-top:28px;border-top:1px solid var(--line-dark)}
+.facts div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark)}
+.facts dd{font:700 clamp(18px,1.8vw,24px)/1.1 var(--f-d);color:var(--on-dark);letter-spacing:-.005em}
+.facts dt{font:500 11px/1.3 var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--soft-dark);text-align:right}
+.plate{position:relative;aspect-ratio:4/5;margin:var(--pt) var(--pr) 0 0;--pt:36px;--pr:36px;--gap:22px;--wx:50.9%;--ww:16.1%;--wy:19.2%;--wh:16.6%}
+.plate-in{position:absolute;inset:0;overflow:hidden;background:#1d1c1a}
+.plate-in img{width:100%;height:100%;object-fit:cover}
+.plate-in::after{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(ellipse 36% 28% at calc(var(--wx) + var(--ww)/2) calc(var(--wy) + var(--wh)/2),rgba(242,195,0,.34),rgba(242,195,0,0));animation:glow 2.6s ease-out both}
+@keyframes glow{0%{opacity:0}38%{opacity:0}46%{opacity:.7}52%{opacity:.25}60%{opacity:.9}100%{opacity:1}}
+/* dimension lines around the lit window */
+.xl,.xh,.dw,.dh{position:absolute;pointer-events:none}
+.xl{top:calc(-1 * var(--gap) - 8px);height:calc(var(--wy) + var(--gap) + 8px);border-left:1px solid rgba(196,163,105,.55)}
+.xl.l{left:var(--wx)}
+.xl.r{left:calc(var(--wx) + var(--ww))}
+.dw{left:var(--wx);width:var(--ww);top:calc(-1 * var(--gap));border-top:1px solid var(--tan)}
+.dw::before,.dw::after,.dh::before,.dh::after{content:"";position:absolute;background:var(--tan)}
+.dw::before,.dw::after{top:-6px;width:1px;height:11px;transform:rotate(40deg)}
+.dw::before{left:0}.dw::after{right:0}
+.dw span{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);font:500 10px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;color:var(--tan);white-space:nowrap}
+.xh{left:calc(var(--wx) + var(--ww));width:calc(100% - var(--wx) - var(--ww) + var(--gap) + 8px);border-top:1px solid rgba(196,163,105,.55)}
+.xh.t{top:var(--wy)}
+.xh.b{top:calc(var(--wy) + var(--wh))}
+.dh{left:calc(100% + var(--gap));top:var(--wy);height:var(--wh);border-left:1px solid var(--tan)}
+.dh::before,.dh::after{left:-6px;width:11px;height:1px;transform:rotate(40deg)}
+.dh::before{top:0}.dh::after{bottom:0}
+.dh span{position:absolute;left:9px;top:50%;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);font:500 10px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;color:var(--tan);white-space:nowrap}
+@media (min-width:760px){
+  .dbr{display:inline}
+  .hero-grid{grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);grid-template-areas:"copy plate" "facts facts";grid-template-rows:auto auto;column-gap:clamp(28px,5vw,80px);row-gap:0;align-items:start}
+  .plate{--pt:52px;--pr:64px;--gap:30px}
+  .facts{grid-template-columns:repeat(3,auto);justify-content:start;margin-top:30px}
+  .facts div{flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:0;padding:16px 22px 0 0;margin-right:22px;border-bottom:0;border-right:1px solid var(--line-dark)}
+  .facts div:last-child{border-right:0;margin-right:0;padding-right:0}
+  .facts dt{margin-top:6px;text-align:left}
+}
+@media (min-width:1000px){
+  .hero-grid{grid-template-areas:"copy plate" "facts plate";grid-template-rows:auto 1fr}
+  .facts{margin-top:36px}
+}
+
+/* ============ sections ============ */
+.sec{padding:clamp(68px,9vw,132px) 0}
+.sec-day{background:var(--tan);color:var(--ink)}
+.sec-paper{background:var(--paper);color:var(--ink)}
+.label{display:flex;align-items:center;gap:12px;color:var(--tan)}
+.sec-day .label{color:var(--ink)}
+.sec-paper .label{color:var(--tan-ink)}
+.sec-day .gl,.sec-paper .gl{border-color:var(--ink)}
+.sec-day .gl.lit,.sec-paper .gl.lit{background:var(--ink)}
+.h2{text-wrap:balance;margin-top:16px;font:700 clamp(2rem,4.3vw,3.7rem)/1.02 var(--f-d);letter-spacing:-.022em;max-width:15em}
+.sec-lead{text-wrap:pretty;margin-top:20px;max-width:36em;font-size:clamp(17px,1.4vw,19px);color:var(--soft-dark)}
+.sec-day .sec-lead,.sec-paper .sec-lead{color:var(--soft-paper)}
+.sec-day .sec-lead{color:#3A3226}
+
+/* ============ what we make: an elevation of four windows ============ */
+.elev{display:grid;gap:46px 24px;margin-top:clamp(40px,5vw,72px)}
+.win{display:grid;grid-template-rows:auto auto;align-content:start;--ar:4/3}
+.w-b{--ar:4/5}
+.w-c{--ar:3/2}
+.fw{align-self:end;position:relative;padding-top:30px}
+.dm{position:absolute;left:0;right:0;top:0;height:0;border-top:1px solid rgba(25,25,23,.7)}
+.dm::before,.dm::after{content:"";position:absolute;top:-6px;width:1px;height:11px;background:var(--ink);transform:rotate(40deg)}
+.dm::before{left:0}.dm::after{right:0}
+.dm b{position:absolute;left:50%;top:-8px;transform:translateX(-50%);padding:0 9px;background:var(--tan);font:500 11px/1 var(--f-m);letter-spacing:.14em;color:var(--ink)}
+.frame{background:var(--ink);padding:9px}
+.frame-in{aspect-ratio:var(--ar);overflow:hidden;background:#2b2926}
+.frame-in img{width:100%;height:100%;object-fit:cover}
+.sill{height:11px;margin:0 -7px;background:var(--ink)}
+.win h3{display:flex;align-items:center;gap:10px;margin:22px 0 8px;font:700 clamp(21px,1.9vw,25px)/1.12 var(--f-d);letter-spacing:-.01em}
+.win h3 i{font:500 11px/1 var(--f-m);font-style:normal;letter-spacing:.06em;display:inline-grid;place-items:center;width:24px;height:24px;border:1.5px solid var(--ink);border-radius:50%;flex:none}
+.win p{font-size:16px;line-height:1.55;color:#2F281F;max-width:26em}
+@media (min-width:700px){.elev{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}}
+@media (min-width:1000px){
+  .w-b{--ar:3/5}
+  .elev{grid-template-columns:3.3fr 2.8fr 3.7fr 3.2fr;grid-template-rows:auto auto;column-gap:30px;row-gap:0}
+  .win{grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
+}
+
+/* ============ steps: four panes light up ============ */
+.sec-night{background:var(--wall)}
+.steps{display:grid;gap:34px 24px;margin-top:clamp(40px,5vw,72px);counter-reset:s}
+.step{display:grid;grid-template-columns:92px minmax(0,1fr);gap:0 20px;align-items:start}
+.pane{--g:5px;position:relative;display:grid;grid-template:1fr 1fr/1fr 1fr;gap:var(--g);padding:var(--g);background:var(--tan);aspect-ratio:4/5;width:100%;max-width:150px;margin-bottom:28px;grid-row:span 3}
+.pane::after{content:"";position:absolute;left:-7px;right:-7px;bottom:-11px;height:9px;background:#8F7440}
+.pane i{position:relative;background:linear-gradient(165deg,#2A2D31 0%,#18191B 58%,#0F1011 100%);box-shadow:inset 0 5px 8px rgba(0,0,0,.55)}
+.pane i::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#FFDB52 0%,#F2C300 52%,#E2B200 100%);box-shadow:inset 0 5px 8px rgba(0,0,0,.2);opacity:1;transition:opacity .4s ease}
+.js .step:not(.lit) .pane i::before{opacity:0}
+.step.lit .pane{filter:drop-shadow(0 0 20px rgba(242,195,0,.2))}
+.step.lit .pane i:nth-child(1)::before{transition-delay:.0s}
+.step.lit .pane i:nth-child(2)::before{transition-delay:.14s}
+.step.lit .pane i:nth-child(3)::before{transition-delay:.26s}
+.step.lit .pane i:nth-child(4)::before{transition-delay:.4s}
+.step .n{font:500 12px/1 var(--f-m);letter-spacing:.16em;color:var(--tan);padding-top:4px}
+.step h3{margin:10px 0 8px;font:700 clamp(22px,2vw,26px)/1.1 var(--f-d);letter-spacing:-.01em}
+.step p{font-size:16px;line-height:1.55;color:var(--soft-dark);max-width:24em}
+@media (min-width:860px){
+  .steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 28px}
+  .step{display:block}
+  .pane{margin-bottom:30px}
+  .step h3{margin-top:12px}
+}
+
+/* ============ why: facts + the plate ============ */
+.why{display:grid;gap:44px;margin-top:clamp(36px,5vw,64px)}
+.claims li{padding:22px 0;border-top:1px solid var(--line-paper)}
+.claims li:last-child{border-bottom:1px solid var(--line-paper)}
+.claims h3{display:flex;align-items:center;gap:12px;font:700 clamp(24px,2.4vw,32px)/1.05 var(--f-d);letter-spacing:-.015em}
+.claims p{margin-top:8px;font-size:17px;color:var(--soft-paper);max-width:30em;text-wrap:pretty}
+.nameplate{position:relative;background:var(--ink);color:var(--on-dark);padding:30px clamp(22px,3vw,40px) 26px;border:1px solid #000;box-shadow:0 0 0 1px var(--tan-ink) inset}
+.nameplate::before{content:"";position:absolute;inset:9px;border:1px solid rgba(196,163,105,.32);pointer-events:none}
+.screw{position:absolute;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#5b5547,#1b1a17 70%);box-shadow:0 0 0 1px rgba(196,163,105,.28)}
+.screw.a{left:18px;top:18px}.screw.b{right:18px;top:18px}.screw.c{left:18px;bottom:18px}.screw.d{right:18px;bottom:18px}
+.np-head{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:6px 18px 16px;border-bottom:1px solid var(--line-dark);color:var(--tan)}
+.np-head b{font:700 22px/1 var(--f-d);letter-spacing:-.01em;color:var(--on-dark);text-transform:none}
+.nameplate dl{padding:6px 18px 0}
+.nameplate dl div{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:13px 0;border-bottom:1px solid rgba(196,163,105,.18)}
+.nameplate dt{font:500 11px/1.3 var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--tan)}
+.nameplate dd{font:500 18px/1.35 var(--f-t);overflow-wrap:anywhere}
+.nameplate dd a{text-decoration-color:var(--tan);text-underline-offset:3px}
+.nameplate dd a:hover{color:var(--yellow)}
+.np-src{padding:14px 18px 8px;font:500 11px/1.4 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--soft-dark)}
+@media (min-width:560px){.nameplate dl div{grid-template-columns:11em minmax(0,1fr);gap:16px;align-items:baseline}}
+@media (min-width:960px){.why{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,96px);align-items:start}}
+
+/* ============ area ============ */
+.strip{height:clamp(140px,22vw,300px);background:var(--tan);overflow:hidden}
+.strip img{width:100%;height:100%;object-fit:cover}
+.area{display:grid;gap:36px}
+.places{display:flex;flex-wrap:wrap;gap:10px}
+.places li{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px;border:2px solid var(--tan);font:600 clamp(17px,1.5vw,20px)/1 var(--f-d);letter-spacing:-.005em}
+.places li.base{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.places li small{font:500 10px/1 var(--f-m);letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.area-note{margin-top:22px;color:var(--soft-dark);max-width:34em}
+.area-note a{color:var(--on-dark);text-decoration-color:var(--yellow);text-underline-offset:4px}
+@media (min-width:960px){.area{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(40px,6vw,96px);align-items:end}}
+
+/* ============ contact ============ */
+.contact{display:grid;gap:48px}
+.rows{margin-top:30px}
+.rows div{display:grid;gap:4px;padding:14px 0;border-top:1px solid var(--line-dark)}
+.rows div:last-child{border-bottom:1px solid var(--line-dark)}
+.rows dt{font:500 11px/1.3 var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--tan)}
+.rows dd{font:500 18px/1.4 var(--f-t)}
+.rows a{text-decoration-color:var(--tan);text-underline-offset:4px}
+.rows a:hover{color:var(--yellow)}
+.rows .big{font:700 clamp(26px,3vw,36px)/1.05 var(--f-d);letter-spacing:-.01em;text-decoration:none;color:var(--yellow)}
+.panel{position:relative;background:var(--yellow);color:var(--ink);padding:clamp(22px,3.2vw,44px)}
+.panel::after{content:"";position:absolute;left:-10px;right:-10px;bottom:-12px;height:12px;background:var(--tan)}
+.panel :focus-visible{outline-color:var(--ink)}
+.f{margin:0 0 18px;padding:0;border:0;min-width:0}
+.f label,.f legend{display:block;padding:0;margin-bottom:8px;font:600 15px/1.3 var(--f-t)}
+.f input[type=text],.f textarea{width:100%;display:block;border:2px solid var(--ink);border-radius:0;background:rgba(255,255,255,.28);padding:13px 14px;font:500 17px/1.4 var(--f-t);color:var(--ink);-webkit-appearance:none;appearance:none}
+.f textarea{resize:vertical;min-height:112px}
+.f input::placeholder,.f textarea::placeholder{color:rgba(25,25,23,.72)}
+.f input:focus,.f textarea:focus{background:#fff;outline:3px solid var(--ink);outline-offset:2px}
+.err{display:none;margin-top:6px;font:600 14px/1.3 var(--f-t);color:#7A1208}
+.f.bad .err{display:block}
+.f.bad input{border-color:#7A1208;background:rgba(255,255,255,.6)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:2px solid var(--ink);font:600 15px/1 var(--f-t);cursor:pointer;transition:background .15s,color .15s}
+.chip input:checked+span{background:var(--ink);color:var(--yellow)}
+.chip input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.chip:hover span{background:rgba(25,25,23,.1)}
+.chip input:checked+span:hover{background:var(--ink)}
+.sum{display:none;margin:0 0 14px;font:600 15px/1.35 var(--f-t);color:#7A1208}
+.sum.on{display:block}
+.panel .btn{width:100%;margin-top:6px}
+.status{margin-top:14px;min-height:1.4em;font:500 15px/1.45 var(--f-t)}
+.fallback{margin-top:10px;font-size:15px;line-height:1.5}
+.fallback a{font-weight:600;overflow-wrap:anywhere;text-underline-offset:3px}
+@media (min-width:960px){.contact{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,96px);align-items:start}}
+@media (min-width:560px){.rows div{grid-template-columns:9em minmax(0,1fr);gap:16px;align-items:baseline}}
+
+/* ============ footer ============ */
+.foot{background:#080807;border-top:1px solid var(--line-dark);padding:48px 0 36px;color:var(--soft-dark);font-size:15px}
+.foot-grid{display:grid;gap:30px}
+.foot .brand{margin-bottom:14px}
+.foot address{font-style:normal;line-height:1.7}
+.foot .co{color:var(--on-dark)}
+.foot a{text-underline-offset:3px}
+.foot a:hover{color:var(--yellow)}
+.foot-base{margin-top:34px;padding-top:18px;border-top:1px solid rgba(196,163,105,.18);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font:500 11px/1.5 var(--f-m);letter-spacing:.1em;text-transform:uppercase}
+@media (min-width:800px){.foot-grid{grid-template-columns:1.1fr 1fr 1fr;gap:40px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
 }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Ilgava", "legalName": "UAB „Ilgava“", "url": "https://vasylian.com/svetaine/ilgava/", "email": "dariusdurys@gmail.com", "identifier": {"@type": "PropertyValue", "propertyID": "Įmonės kodas", "value": "304462605"}, "address": {"@type": "PostalAddress", "addressCountry": "LT", "streetAddress": "Bičiulių g. 9-44, 91274 Klaipėda", "addressLocality": "Klaipėda"}, "telephone": "+37068356756", "foundingDate": "2017-02-21"}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"UAB „Ilgava“","legalName":"UAB „Ilgava“","url":"https://vasylian.com/svetaine/ilgava/","logo":"https://vasylian.com/svetaine/ilgava/img/logo-mark.png","image":"https://vasylian.com/svetaine/ilgava/img/og.jpg","description":"Langų gamyba Klaipėdoje: langai namams, butams ir verslo patalpoms pagal užsakymą.","telephone":"+37068356756","email":"dariusdurys@gmail.com","foundingDate":"2017-02-21","vatID":"LT100011131615","identifier":"304462605","address":{"@type":"PostalAddress","streetAddress":"Bičiulių g. 9-44","postalCode":"91274","addressLocality":"Klaipėda","addressCountry":"LT"},"areaServed":"Klaipėda ir Klaipėdos regionas"}
+</script>
 </head>
-<body class="lay-a pal-asfalts">
-<a class="skip" href="#saturs">Pereiti prie turinio</a>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><g id="m"><polygon points="247,32 213,11 183,21 182,74 168,69 10,137 10,257 309,257 309,129 247,102" style="fill:var(--mb,#191917)"/><polygon points="159,84 20,144 20,248 159,248" style="fill:var(--mt,#C4A369)"/><polygon points="212,16 189,24 189,76 212,86" style="fill:var(--mt,#C4A369)"/><polygon points="44,145 75,134 76,169 45,178" style="fill:var(--md,#191917)"/><polygon points="101,125 137,112 138,153 102,163" style="fill:var(--md,#191917)"/><polygon points="44,206 75,200 76,231 45,234" style="fill:var(--md,#191917)"/><polygon points="101,196 137,190 138,226 102,230" style="fill:var(--md,#191917)"/><polygon points="197,114 231,126 231,162 197,153" style="fill:var(--ml,#F2C300)"/><polygon points="259,135 288,146 288,176 259,169" style="fill:var(--ml,#F2C300)"/><polygon points="197,192 231,197 231,228 197,225" style="fill:var(--ml,#F2C300)"/><polygon points="259,202 288,206 288,232 259,230" style="fill:var(--ml,#F2C300)"/></g></defs></svg>
+<a class="skip" href="#ka-gaminame">Pereiti prie turinio</a>
+
+<div id="top"></div>
 <header class="hdr">
   <div class="wrap hdr-in">
-    <a class="brand" href="#sakums"><img class="brand-logo" src="img/logo-header.png" srcset="img/logo-header.png 1x, img/logo-header@2x.png 2x" width="40" height="48" alt="UAB „Ilgava“"><span class="brand-note">Langų gamyba</span></a>
-    <nav class="nav" id="menu" aria-label="Pagrindinis meniu">
-      <a href="#pakalpojumi">Paslaugos</a>
-      <a href="#par-uznemumu">Apie įmonę</a>
-      <a href="#darba-gaita">Darbų eiga</a>
-      <a href="#kontakti">Kontaktai</a>
-      <a class="btn btn-cta nav-cta" href="#kontakti">Gauti pasiūlymą</a>
+    <a class="brand" href="#top" aria-label="UAB Ilgava, į puslapio pradžią">
+      <svg class="mark" viewBox="10 11 299 246" aria-hidden="true"><use href="#m"/></svg>
+      <img class="wm" src="img/wordmark.png" width="294" height="109" alt="">
+    </a>
+    <nav class="nav" id="nav" aria-label="Pagrindinis">
+      <a href="#ka-gaminame">Ką gaminame</a>
+      <a href="#kaip-uzsakyti">Kaip užsakyti</a>
+      <a href="#kodel-ilgava">Kodėl Ilgava</a>
+      <a href="#kur-dirbame">Kur dirbame</a>
+      <a href="#kontaktai">Kontaktai</a>
     </nav>
-    <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Atidaryti meniu" data-open="Atidaryti meniu" data-close="Uždaryti meniu"><span></span></button>
+    <a class="hdr-call" href="tel:+37068356756" aria-label="Skambinti +370 683 56756">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+      <span class="lbl">Skambinti</span><span class="num">+370 683 56756</span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Meniu"><span></span></button>
   </div>
 </header>
-<main id="saturs">
-<section class="hero" id="sakums">
-  <div class="hero-grid">
+
+<main>
+<!-- ================= HERO: the night face ================= -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="kicker">Langai Klaipėdoje</p>
-      <h1 class="">Langų gamyba <em>Klaipėdoje</em></h1>
-      <p class="lead">Gaminame langus Klaipėdoje. Aprašykite, kokių langų jums reikia, ir gaukite pasiūlymą.</p>
-      <div class="hero-cta">
-        <a class="btn btn-cta" href="#kontakti">Gauti pasiūlymą <svg class="ico ico-e" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
-        <a class="btn-link" href="#pakalpojumi">Paslaugos</a>
+      <p class="kicker mono"><i class="gl lit" aria-hidden="true"></i>Langų gamyba Klaipėdoje</p>
+      <h1 id="h1">Langai <br class="dbr">pagal jūsų <br class="dbr"><span class="dim">matmenis</span><span class="dot">.</span></h1>
+      <p class="lead">Gaminame langus namams, butams ir verslo patalpoms. Pirmiausia išmatuojame ir patariame, tada gaminame pagal užsakymą.</p>
+      <div class="cta">
+        <a class="btn btn-y" href="tel:+37068356756">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+          <span><small>Skambinti</small><b>+370 683 56756</b></span>
+        </a>
+        <a class="btn btn-o" href="#kontaktai">Gauti pasiūlymą</a>
       </div>
     </div>
-    <div class="hero-photo ph"><picture><source media="(min-width: 900px)" srcset="../lib/p/5691544-p-480.webp 480w, ../lib/p/5691544-p-640.webp 640w, ../lib/p/5691544-p-768.webp 768w, ../lib/p/5691544-p-1080.webp 1080w" sizes="42vw"><img src="../lib/p/5691544-l-1024.webp" srcset="../lib/p/5691544-l-640.webp 640w, ../lib/p/5691544-l-800.webp 800w, ../lib/p/5691544-l-1024.webp 1024w, ../lib/p/5691544-l-1600.webp 1600w" sizes="100vw" width="1024" height="683" alt="Langų montuotojas su grąžtu" fetchpriority="high" decoding="async"></picture></div>
+    <figure class="plate">
+      <div class="plate-in">
+        <img src="img/hero-720.webp" srcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-1000.webp 1000w, img/hero-1280.webp 1280w" sizes="(min-width: 760px) 44vw, calc(100vw - 74px)" width="720" height="900" alt="Tamsi pastato fasada su keturiais langais, viename iš jų dega šviesa" fetchpriority="high" decoding="async">
+      </div>
+      <span class="xl l" aria-hidden="true"></span><span class="xl r" aria-hidden="true"></span>
+      <span class="dw" aria-hidden="true"><span>plotis</span></span>
+      <span class="xh t" aria-hidden="true"></span><span class="xh b" aria-hidden="true"></span>
+      <span class="dh" aria-hidden="true"><span>aukštis</span></span>
+    </figure>
+    <dl class="facts">
+      <div><dd>Klaipėda</dd><dt>Veiklos vieta</dt></div>
+      <div><dd>2017</dd><dt>Įregistruota</dt></div>
+      <div><dd>304462605</dd><dt>Įmonės kodas</dt></div>
+    </dl>
   </div>
-  <div class="ticker"><div class="wrap ticker-in"><span>Langų gamyba</span><span>Langai namams</span><span>Langai renovacijai</span><span>Langai naujiems pastatams</span></div></div>
 </section>
-<section class="facts" aria-label="Rekvizitai">
-  <div class="wrap facts-in">
-<div class="fact"><p class="fact-k">Įmonės kodas</p><p class="fact-v">304462605</p></div><div class="fact"><p class="fact-k">Įregistruota</p><p class="fact-v">2017-02-21</p></div><div class="fact"><p class="fact-k">Vieta</p><p class="fact-v">Klaipėda</p></div>  </div>
-</section>
-<section class="svc" id="pakalpojumi">
+
+<!-- ================= WHAT WE MAKE: the day face ================= -->
+<section class="sec sec-day" id="ka-gaminame" aria-labelledby="h-ka">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Ką darome</h2>
-      <p>Mūsų veikla yra langai ir jų gamyba. Aptarsime, kokių langų reikia jūsų pastatui.</p>
+    <p class="label mono"><i class="gl lit" aria-hidden="true"></i>01 Ką gaminame</p>
+    <h2 class="h2" id="h-ka">Langai namams ir verslui, pagaminti pagal užsakymą</h2>
+    <p class="sec-lead">Gaminame langus pagal užsakymą. Pasakykite, kam jie reikalingi ir kokio dydžio, o likusį aptarsime kartu.</p>
+    <div class="elev">
+      <article class="win w-a">
+        <div class="fw"><span class="dm" aria-hidden="true"><b>A</b></span><div class="frame"><div class="frame-in"><img src="img/made-640.webp" srcset="img/made-420.webp 420w, img/made-640.webp 640w, img/made-900.webp 900w" sizes="(min-width:1000px) 26vw, (min-width:700px) 44vw, calc(100vw - 58px)" width="640" height="480" alt="Meistras gamina baltą lango rėmą ant kopėčių" loading="lazy" decoding="async"></div></div><div class="sill"></div></div>
+        <div class="tx"><h3><i>A</i>Gamyba pagal užsakymą</h3><p>Langus gaminame pagal jūsų angos matmenis ir sutartus parametrus.</p></div>
+      </article>
+      <article class="win w-b">
+        <div class="fw"><span class="dm" aria-hidden="true"><b>B</b></span><div class="frame"><div class="frame-in"><img src="img/day-540.webp" srcset="img/day-360.webp 360w, img/day-540.webp 540w, img/day-780.webp 780w" sizes="(min-width:1000px) 22vw, (min-width:700px) 44vw, calc(100vw - 58px)" width="540" height="900" alt="Aukštas baltas langas šviesiame kambaryje" loading="lazy" decoding="async"></div></div><div class="sill"></div></div>
+        <div class="tx"><h3><i>B</i>Namams ir butams</h3><p>Langai gyvenamajam namui ar butui. Pasakykite, kiek jų reikia ir kokio dydžio.</p></div>
+      </article>
+      <article class="win w-c">
+        <div class="fw"><span class="dm" aria-hidden="true"><b>C</b></span><div class="frame"><div class="frame-in"><img src="img/biz-640.webp" srcset="img/biz-420.webp 420w, img/biz-640.webp 640w, img/biz-900.webp 900w" sizes="(min-width:1000px) 29vw, (min-width:700px) 44vw, calc(100vw - 58px)" width="640" height="427" alt="Dideli tamsiais rėmais langai su dangumi ir kabančiais šviestuvais" loading="lazy" decoding="async"></div></div><div class="sill"></div></div>
+        <div class="tx"><h3><i>C</i>Verslo patalpoms</h3><p>Langai biurams, parduotuvėms ir kitoms komercinėms patalpoms.</p></div>
+      </article>
+      <article class="win w-d">
+        <div class="fw"><span class="dm" aria-hidden="true"><b>D</b></span><div class="frame"><div class="frame-in"><img src="img/measure-640.webp" srcset="img/measure-420.webp 420w, img/measure-640.webp 640w, img/measure-900.webp 900w" sizes="(min-width:1000px) 25vw, (min-width:700px) 44vw, calc(100vw - 58px)" width="640" height="480" alt="Rankos matuoja lango rėmą liniuote" loading="lazy" decoding="async"></div></div><div class="sill"></div></div>
+        <div class="tx"><h3><i>D</i>Matavimas ir konsultacija</h3><p>Prieš gaminant išsiaiškiname, kokių langų reikia, ir sutariame matmenis.</p></div>
+      </article>
     </div>
-    <ol class="svc-list">
-      <li class="svc-row">
-        <span class="svc-num">01</span>
-        <h3>Langų gamyba</h3>
-        <p class="svc-text">Gaminame langus pagal užsakymą. Matmenis ir pageidavimus aptariame prieš pradėdami gamybą.</p>
-        <div class="svc-ph ph"><img src="../lib/p/5691550-l-1024.webp" srcset="../lib/p/5691550-l-640.webp 640w, ../lib/p/5691550-l-800.webp 800w, ../lib/p/5691550-l-1024.webp 1024w, ../lib/p/5691550-l-1600.webp 1600w" sizes="(min-width: 900px) 300px, 320px" width="1024" height="683" alt="Lango montavimas senoje patalpoje" loading="lazy" decoding="async"></div>
-      </li>
-      <li class="svc-row">
-        <span class="svc-num">02</span>
-        <h3>Langai namams</h3>
-        <p class="svc-text">Langai gyvenamiesiems namams ir butams. Sprendimą aptariame pagal jūsų pastato angas.</p>
-        <div class="svc-ph ph"><img src="../lib/p/7031604-l-1024.webp" srcset="../lib/p/7031604-l-640.webp 640w, ../lib/p/7031604-l-800.webp 800w, ../lib/p/7031604-l-1024.webp 1024w, ../lib/p/7031604-l-1600.webp 1600w" sizes="(min-width: 900px) 300px, 320px" width="1024" height="683" alt="Modernus namas su vejos plotu" loading="lazy" decoding="async"></div>
-      </li>
-      <li class="svc-row">
-        <span class="svc-num">03</span>
-        <h3>Langai renovacijai</h3>
-        <p class="svc-text">Langai senesniems pastatams ir patalpoms, kuriose norite pakeisti esamus langus.</p>
-        <div class="svc-ph ph"><img src="../lib/p/4756490-l-1024.webp" srcset="../lib/p/4756490-l-640.webp 640w, ../lib/p/4756490-l-800.webp 800w, ../lib/p/4756490-l-1024.webp 1024w, ../lib/p/4756490-l-1600.webp 1600w" sizes="(min-width: 900px) 300px, 320px" width="1024" height="683" alt="Patalpa remonto metu" loading="lazy" decoding="async"></div>
-      </li>
-      <li class="svc-row">
-        <span class="svc-num">04</span>
-        <h3>Langai naujiems pastatams</h3>
-        <p class="svc-text">Langai statomiems pastatams, pritaikyti projekte numatytoms angoms.</p>
-        <div class="svc-ph ph"><img src="../lib/p/16076663-l-1024.webp" srcset="../lib/p/16076663-l-640.webp 640w, ../lib/p/16076663-l-800.webp 800w, ../lib/p/16076663-l-1024.webp 1024w, ../lib/p/16076663-l-1600.webp 1600w" sizes="(min-width: 900px) 300px, 320px" width="1024" height="683" alt="Betoninio karkaso pastatas saulėlydžio šviesoje" loading="lazy" decoding="async"></div>
-      </li>
+  </div>
+</section>
+
+<!-- ================= HOW ORDERING WORKS: panes light up ================= -->
+<section class="sec sec-night" id="kaip-uzsakyti" aria-labelledby="h-kaip">
+  <div class="wrap">
+    <p class="label mono"><i class="gl" aria-hidden="true"></i>02 Kaip užsakyti</p>
+    <h2 class="h2" id="h-kaip">Nuo skambučio iki gamybos</h2>
+    <p class="sec-lead">Keturi paprasti žingsniai. Matavimas ir konsultacija yra užsakymo dalis.</p>
+    <ol class="steps" id="steps">
+      <li class="step"><div class="pane" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="n">01</span><h3>Susisiekiate</h3><p>Paskambinate arba parašote. Trumpai aprašote, kokių langų reikia.</p></li>
+      <li class="step"><div class="pane" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="n">02</span><h3>Matavimas ir pokalbis</h3><p>Aptariame poreikį, išmatuojame angas ir sutariame matmenis.</p></li>
+      <li class="step"><div class="pane" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="n">03</span><h3>Pasiūlymas</h3><p>Gaunate pasiūlymą su sutartais langais ir kaina.</p></li>
+      <li class="step"><div class="pane" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="n">04</span><h3>Gamyba</h3><p>Langai gaminami pagal sutartą užsakymą. Kaip juos gausite, aptariame užsakant.</p></li>
     </ol>
   </div>
 </section>
-<section class="about" id="par-uznemumu">
-  <div class="wrap about-in">
-    <div class="about-copy">
-      <h2>Apie įmonę</h2>
-      <p class="about-text">UAB „Ilgava“ įregistruota 2017 m. vasario 21 d. ir veikia Klaipėdoje. Mūsų sritis yra langai ir langų gamyba.</p>
-    </div>
-    <dl class="req">
-<div class="req-row"><dt>Įmonė</dt><dd>UAB „Ilgava“</dd></div><div class="req-row"><dt>Įmonės kodas</dt><dd>304462605</dd></div><div class="req-row"><dt>Įregistruota</dt><dd>2017-02-21</dd></div><div class="req-row"><dt>Adresas</dt><dd>Bičiulių g. 9-44, 91274 Klaipėda</dd></div><div class="req-row"><dt>Veiklos sritys</dt><dd><ul><li>Langai, langų gamyba</li></ul></dd></div>    </dl>
-  </div>
-</section>
-<section class="steps" id="darba-gaita">
+
+<!-- ================= WHY: facts only ================= -->
+<section class="sec sec-paper" id="kodel-ilgava" aria-labelledby="h-kodel">
   <div class="wrap">
-    <h2>Kaip dirbame</h2>
-    <ol class="steps-list">
-      <li><span class="step-n" aria-hidden="true">1</span><h3>Užklausa</h3><p>Aprašote, kokių langų reikia ir kur jie bus naudojami.</p></li>
-      <li><span class="step-n" aria-hidden="true">2</span><h3>Aptarimas</h3><p>Aptariame angas, matmenis ir jūsų pageidavimus.</p></li>
-      <li><span class="step-n" aria-hidden="true">3</span><h3>Pasiūlymas</h3><p>Pateikiame pasiūlymą ir suderiname užsakymo sąlygas.</p></li>
-      <li><span class="step-n" aria-hidden="true">4</span><h3>Gamyba</h3><p>Pagaminame langus pagal suderintą užsakymą.</p></li>
-    </ol>
-  </div>
-</section>
-<section class="band">
-  <div class="band-ph ph"><img src="../lib/p/6473982-l-1024.webp" srcset="../lib/p/6473982-l-640.webp 640w, ../lib/p/6473982-l-800.webp 800w, ../lib/p/6473982-l-1024.webp 1024w, ../lib/p/6473982-l-1600.webp 1600w" sizes="100vw" width="1024" height="683" alt="Darbininkas tikrina sieną gulsčiuku" loading="lazy" decoding="async"></div>
-  <div class="wrap band-box-wrap">
-    <div class="band-box">
-      <h2>Kur esame</h2>
-      <p>Įmonė įsikūrusi Klaipėdoje, Klaipėdos apskrityje.</p>
+    <p class="label mono"><i class="gl lit" aria-hidden="true"></i>03 Kodėl Ilgava</p>
+    <h2 class="h2" id="h-kodel">Tik faktai, kuriuos galite patikrinti</h2>
+    <p class="sec-lead">Įmonės duomenys vieši. Juos rasite Registrų centre ir statyba.lt kataloge.</p>
+    <div class="why">
+      <ul class="claims">
+        <li><h3><i class="gl lit" aria-hidden="true"></i>Langai</h3><p>Registruota veikla: langai, langų gamyba.</p></li>
+        <li><h3><i class="gl lit" aria-hidden="true"></i>Nuo 2017 m.</h3><p>Įmonė įregistruota 2017 m. vasario 21 d.</p></li>
+        <li><h3><i class="gl lit" aria-hidden="true"></i>Viešos ataskaitos</h3><p>Registrų centrui pateikta finansinė atskaitomybė už metus nuo 2017 iki 2025.</p></li>
+      </ul>
+      <div class="nameplate" role="group" aria-label="Įmonės rekvizitai">
+        <i class="screw a"></i><i class="screw b"></i><i class="screw c"></i><i class="screw d"></i>
+        <div class="np-head mono"><b>UAB „Ilgava“</b><span>Rekvizitai</span></div>
+        <dl>
+          <div><dt>Veikla</dt><dd>Langai, langų gamyba</dd></div>
+          <div><dt>Įregistruota</dt><dd>2017-02-21</dd></div>
+          <div><dt>Įmonės kodas</dt><dd>304462605</dd></div>
+          <div><dt>PVM mokėtojo kodas</dt><dd>LT100011131615</dd></div>
+          <div><dt>Adresas</dt><dd>Bičiulių g. 9-44, 91274 Klaipėda</dd></div>
+          <div><dt>Telefonas</dt><dd><a href="tel:+37068356756">+370 683 56756</a></dd></div>
+          <div><dt>El. paštas</dt><dd><a href="mailto:dariusdurys@gmail.com">dariusdurys@gmail.com</a></dd></div>
+        </dl>
+        <p class="np-src">Šaltiniai: statyba.lt, Registrų centras</p>
+      </div>
     </div>
   </div>
 </section>
-<section class="contact" id="kontakti">
-  <div class="wrap contact-in">
-    <div class="contact-copy">
-      <h2>Parašykite mums</h2>
-      <p>Trumpai aprašykite, kokių langų jums reikia. Atsakysime ir aptarsime tolesnius veiksmus.</p>
-      <a class="btn btn-cta" href="mailto:dariusdurys@gmail.com?subject=U%C5%BEklausa%20d%C4%97l%20lang%C5%B3">Rašyti el. laišką</a>
-      <p class="mail-fallback">Jei el. pašto programa neatsidaro, rašykite adresu <span class="mail-addr">dariusdurys@gmail.com</span></p>
+
+<!-- ================= AREA ================= -->
+<div class="strip"><img src="img/area-1200.webp" srcset="img/area-800.webp 800w, img/area-1200.webp 1200w, img/area-1600.webp 1600w" sizes="100vw" width="1200" height="400" alt="" loading="lazy" decoding="async"></div>
+<section class="sec sec-night" id="kur-dirbame" aria-labelledby="h-kur">
+  <div class="wrap area">
+    <div>
+      <p class="label mono"><i class="gl lit" aria-hidden="true"></i>04 Kur dirbame</p>
+      <h2 class="h2" id="h-kur">Klaipėda ir regionas</h2>
+      <p class="sec-lead">Esame Klaipėdoje, Bičiulių gatvėje. Dirbame mieste ir aplinkiniame regione.</p>
     </div>
-    <ul class="contact-list">
-      <li><span class="cl-k">El. paštas</span><a class="cl-v" href="mailto:dariusdurys@gmail.com?subject=U%C5%BEklausa%20d%C4%97l%20lang%C5%B3">dariusdurys@gmail.com</a></li>
-<li><span class="cl-k">Telefonas</span><a class="cl-v" href="tel:+37068356756">+370 6835 6756</a></li>      <li><span class="cl-k">Adresas</span><span class="cl-v cl-addr">Bičiulių g. 9-44, 91274 Klaipėda</span></li>
-    </ul>
+    <div>
+      <ul class="places" aria-label="Vietovės">
+        <li class="base">Klaipėda <small>mūsų adresas</small></li>
+        <li>Klaipėdos rajonas</li>
+        <li>Gargždai</li>
+        <li>Kretinga</li>
+        <li>Palanga</li>
+        <li>Neringa</li>
+        <li>Šilutė</li>
+        <li>Skuodas</li>
+      </ul>
+      <p class="area-note">Kitas miestas ar miestelis? Paskambinkite <a href="tel:+37068356756">+370 683 56756</a>, ir aptarsime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec sec-night" id="kontaktai" aria-labelledby="h-kon" style="padding-top:0">
+  <div class="wrap contact">
+    <div>
+      <p class="label mono"><i class="gl lit" aria-hidden="true"></i>05 Kontaktai</p>
+      <h2 class="h2" id="h-kon">Papasakokite, kokių langų reikia</h2>
+      <p class="sec-lead">Užpildykite formą arba paskambinkite. Aptarsime poreikį ir matavimą.</p>
+      <dl class="rows">
+        <div><dt>Telefonas</dt><dd><a class="big" href="tel:+37068356756">+370 683 56756</a></dd></div>
+        <div><dt>El. paštas</dt><dd><a href="mailto:dariusdurys@gmail.com">dariusdurys@gmail.com</a></dd></div>
+        <div><dt>Adresas</dt><dd>Bičiulių g. 9-44, 91274 Klaipėda</dd></div>
+        <div><dt>Įmonės kodas</dt><dd>304462605</dd></div>
+      </dl>
+    </div>
+    <form class="panel" id="mailform" novalidate>
+      <h3 class="sr">Užklausos forma</h3>
+      <p class="sum" id="f-sum" role="alert">Užpildykite pažymėtus laukus.</p>
+      <div class="f" id="g-name"><label for="f-name">Vardas</label><input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name" placeholder="Jūsų vardas"><p class="err" id="e-name">Įrašykite vardą.</p></div>
+      <div class="f" id="g-contact"><label for="f-contact">Telefonas arba el. paštas</label><input id="f-contact" name="contact" type="text" autocomplete="off" aria-describedby="e-contact" placeholder="+370 ... arba vardas@pastas.lt"><p class="err" id="e-contact">Įrašykite telefoną arba el. paštą, kuriuo galime susisiekti.</p></div>
+      <fieldset class="f"><legend>Kam reikalingi langai?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="kind" value="Namui"><span>Namui</span></label>
+          <label class="chip"><input type="radio" name="kind" value="Butui"><span>Butui</span></label>
+          <label class="chip"><input type="radio" name="kind" value="Verslo patalpoms"><span>Verslo patalpoms</span></label>
+          <label class="chip"><input type="radio" name="kind" value="Kita"><span>Kita</span></label>
+        </div>
+      </fieldset>
+      <div class="f"><label for="f-msg">Kiek langų ir kokio dydžio? <span style="font-weight:500">(nebūtina)</span></label><textarea id="f-msg" name="msg" rows="4" placeholder="Pvz., keli langai gyvenamajam namui, matmenų dar nežinau"></textarea></div>
+      <button class="btn btn-k" type="submit">Siųsti užklausą</button>
+      <p class="status" id="f-status" role="status" aria-live="polite"></p>
+      <p class="fallback">Jei laiškas neatsidaro, rašykite <a href="mailto:dariusdurys@gmail.com">dariusdurys@gmail.com</a> arba skambinkite <a href="tel:+37068356756">+370 683 56756</a>.</p>
+    </form>
   </div>
 </section>
 </main>
-<footer class="ftr">
-  <div class="wrap ftr-in">
-    <p class="ftr-brand">Ilgava</p>
-    <p>UAB „Ilgava“ · Įmonės kodas 304462605</p>
-    <p>Bičiulių g. 9-44, 91274 Klaipėda</p>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Į puslapio pradžią"><svg class="mark" viewBox="10 11 299 246" aria-hidden="true"><use href="#m"/></svg><img class="wm" src="img/wordmark.png" width="294" height="109" alt=""></a>
+        <p>Langų gamyba Klaipėdoje.</p>
+      </div>
+      <address>
+        <span class="co">UAB „Ilgava“</span><br>
+        Bičiulių g. 9-44<br>
+        91274 Klaipėda<br>
+        Veikla: langai, langų gamyba
+      </address>
+      <address>
+        <a href="tel:+37068356756">+370 683 56756</a><br>
+        <a href="mailto:dariusdurys@gmail.com">dariusdurys@gmail.com</a><br>
+        <a href="#top">Į puslapio viršų</a>
+      </address>
+    </div>
+    <div class="foot-base"><span>Įmonės kodas 304462605 · PVM kodas LT100011131615</span><span>Duomenų šaltiniai: statyba.lt, Registrų centras</span></div>
   </div>
 </footer>
-<script>(function(){
-  var body=document.body, btn=document.querySelector('.burger'), menu=document.getElementById('menu');
-  if(!btn||!menu)return;
-  function setOpen(open){
-    body.classList.toggle('menu-open',open);
-    btn.setAttribute('aria-expanded',open?'true':'false');
-    btn.setAttribute('aria-label',open?(btn.dataset.close||'Close'):(btn.dataset.open||'Menu'));
+
+<script>
+(function(){
+  var d=document,root=d.documentElement,btn=d.querySelector('.burger'),nav=d.getElementById('nav');
+  function setMenu(o){root.classList.toggle('menu-open',o);btn.setAttribute('aria-expanded',o?'true':'false')}
+  btn.addEventListener('click',function(){setMenu(!root.classList.contains('menu-open'))});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'&&root.classList.contains('menu-open')){setMenu(false);btn.focus()}});
+  window.addEventListener('resize',function(){if(window.innerWidth>=1000&&root.classList.contains('menu-open'))setMenu(false)});
+
+  // the four panes light up one step after another
+  var steps=[].slice.call(d.querySelectorAll('.step'));
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function lightAll(){steps.forEach(function(s){s.classList.add('lit')})}
+  if(!('IntersectionObserver' in window)||reduce){lightAll()}
+  else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        io.disconnect();
+        steps.forEach(function(s,i){setTimeout(function(){s.classList.add('lit')},i*380)});
+      });
+    },{threshold:.25});
+    io.observe(d.getElementById('steps'));
   }
-  btn.addEventListener('click',function(){setOpen(!body.classList.contains('menu-open'));});
-  menu.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))setOpen(false);});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&body.classList.contains('menu-open')){setOpen(false);btn.focus();}});
-  window.addEventListener('resize',function(){if(window.innerWidth>=900&&body.classList.contains('menu-open'))setOpen(false);});
+
+  // contact form: validate, then build a mailto
+  var form=d.getElementById('mailform'),sum=d.getElementById('f-sum'),st=d.getElementById('f-status');
+  var TO='dariusdurys@gmail.com';
+  function bad(id,on){d.getElementById(id).classList.toggle('bad',on);var i=d.getElementById(id==='g-name'?'f-name':'f-contact');i.setAttribute('aria-invalid',on?'true':'false')}
+  function okContact(v){v=v.trim();return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)||v.replace(/\D/g,'').length>=7}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=form.elements.name.value.trim(),contact=form.elements.contact.value.trim();
+    var kind=(form.querySelector('input[name=kind]:checked')||{}).value||'';
+    var msg=form.elements.msg.value.trim();
+    var nOk=name.length>=2,cOk=okContact(contact);
+    bad('g-name',!nOk);bad('g-contact',!cOk);
+    sum.classList.toggle('on',!(nOk&&cOk));
+    if(!(nOk&&cOk)){
+      st.textContent='';
+      var first=d.getElementById(nOk?'f-contact':'f-name');
+      first.scrollIntoView({block:'center',behavior:reduce?'auto':'smooth'});first.focus({preventScroll:true});
+      return;
+    }
+    var subject='Užklausa dėl langų'+(kind?': '+kind:'');
+    var body='Vardas: '+name+'\r\nKontaktas: '+contact+(kind?'\r\nKam reikalingi langai: '+kind:'')+(msg?'\r\n\r\n'+msg:'')+'\r\n\r\nUžklausa iš svetainės vasylian.com/svetaine/ilgava/';
+    var href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    var a=d.createElement('a');a.href=href;a.style.display='none';d.body.appendChild(a);a.click();d.body.removeChild(a);
+    st.textContent='Atidarome jūsų pašto programą. Jei ji neatsidarė, rašykite '+TO+' arba skambinkite +370 683 56756.';
+  });
+  form.addEventListener('input',function(e){
+    if(e.target.name==='name'&&e.target.value.trim().length>=2)bad('g-name',false);
+    if(e.target.name==='contact'&&okContact(e.target.value))bad('g-contact',false);
+    if(!d.querySelector('.f.bad'))sum.classList.remove('on');
+  });
 })();
 </script>
 </body>

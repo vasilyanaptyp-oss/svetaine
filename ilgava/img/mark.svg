@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 11 299 246" width="299" height="246">
+<polygon class="m-body" points="247,32 213,11 183,21 182,74 168,69 10,137 10,257 309,257 309,129 247,102" fill="#191917"/>
+<polygon class="m-tan" points="159,84 20,144 20,248 159,248" fill="#C4A369"/>
+<polygon class="m-tan" points="212,16 189,24 189,76 212,86" fill="#C4A369"/>
+<polygon class="m-dark" points="44,145 75,134 76,169 45,178" fill="#191917"/>
+<polygon class="m-dark" points="101,125 137,112 138,153 102,163" fill="#191917"/>
+<polygon class="m-dark" points="44,206 75,200 76,231 45,234" fill="#191917"/>
+<polygon class="m-dark" points="101,196 137,190 138,226 102,230" fill="#191917"/>
+<polygon class="m-lit" points="197,114 231,126 231,162 197,153" fill="#F2C300"/>
+<polygon class="m-lit" points="259,135 288,146 288,176 259,169" fill="#F2C300"/>
+<polygon class="m-lit" points="197,192 231,197 231,228 197,225" fill="#F2C300"/>
+<polygon class="m-lit" points="259,202 288,206 288,232 259,230" fill="#F2C300"/>
+</svg>

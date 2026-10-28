@@ -18,7 +18,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="theme-color" content="#151618">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23151618%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f2f0ea%22%3EI%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 <link rel="preload" href="../lib/f/bigshoulders-display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../lib/f/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" imagesrcset="../lib/p/5691544-l-640.webp 640w, ../lib/p/5691544-l-800.webp 800w, ../lib/p/5691544-l-1024.webp 1024w, ../lib/p/5691544-l-1600.webp 1600w" imagesizes="100vw" media="(max-width: 899px)">
@@ -77,8 +78,8 @@ body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--f-text)}
 .btn-link:hover{opacity:.75}
 .hdr{position:sticky;top:0;z-index:100;background:var(--slab);color:var(--slab-ink);border-bottom:1px solid var(--slab-line)}
 .hdr-in{display:flex;align-items:center;gap:28px;height:var(--hdr)}
-.brand{display:flex;align-items:baseline;gap:12px;margin-right:auto;min-width:0;text-decoration:none}
-.brand-name{font:800 31px/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand{display:flex;align-items:center;gap:14px;margin-right:auto;min-width:0;text-decoration:none}
+.brand-logo{display:block;flex:none;width:auto;height:48px}
 .brand-note{font:500 12px/1 var(--f-text);letter-spacing:.16em;text-transform:uppercase;opacity:.7;white-space:nowrap}
 .nav{display:flex;align-items:center;gap:30px}
 .nav a{font:500 15px/1 var(--f-text);letter-spacing:.04em;text-decoration:none}
@@ -170,7 +171,7 @@ a.cl-v:hover{text-decoration:underline;text-decoration-thickness:2px;text-underl
 }
 @media (max-width:899px){
 :root{--hdr:60px}
-.brand-name{font-size:27px}
+.brand-logo{height:40px}
 .brand-note{display:none}
 .nav{background:var(--slab);color:var(--slab-ink)}
 .nav a{padding:18px 0;font-size:20px;border-bottom:1px solid var(--slab-line)}
@@ -217,7 +218,7 @@ a.cl-v:hover{text-decoration:underline;text-decoration-thickness:2px;text-underl
 <a class="skip" href="#saturs">Pereiti prie turinio</a>
 <header class="hdr">
   <div class="wrap hdr-in">
-    <a class="brand" href="#sakums"><span class="brand-name">Ilgava</span><span class="brand-note">Langų gamyba</span></a>
+    <a class="brand" href="#sakums"><img class="brand-logo" src="img/logo-header.png" srcset="img/logo-header.png 1x, img/logo-header@2x.png 2x" width="40" height="48" alt="UAB „Ilgava“"><span class="brand-note">Langų gamyba</span></a>
     <nav class="nav" id="menu" aria-label="Pagrindinis meniu">
       <a href="#pakalpojumi">Paslaugos</a>
       <a href="#par-uznemumu">Apie įmonę</a>

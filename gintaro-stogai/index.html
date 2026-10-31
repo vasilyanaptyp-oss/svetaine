@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gintaro stogai | Stogų dengimas ir renovacija</title>
-<meta name="description" content="MB „Gintaro stogai“: šlaitinių stogų dengimas, renovacija, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos. Rašykite: stogdengyss@gmail.com.">
+<meta name="description" content="MB „Gintaro stogai“: šlaitinių stogų dengimas, renovacija, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos visoje Lietuvoje. Tel. +370 633 40465, stogdengyss@gmail.com.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://vasylian.com/svetaine/gintaro-stogai/">
 <meta name="theme-color" content="#0c3532">
@@ -31,6 +31,8 @@
   "url": "https://vasylian.com/svetaine/gintaro-stogai/",
   "image": "https://vasylian.com/svetaine/gintaro-stogai/img/og.jpg",
   "email": "stogdengyss@gmail.com",
+  "telephone": "+37063340465",
+  "areaServed": {"@type": "Country", "name": "Lietuva"},
   "vatID": "LT100017213717",
   "identifier": {"@type": "PropertyValue", "propertyID": "Įmonės kodas", "value": "306109073"},
   "foundingDate": "2022-07-01",
@@ -98,6 +100,8 @@ p{margin:0}
 .nav a:not(.btn){color:var(--on-deep);text-decoration:none;font-weight:600;font-size:1.0625rem;padding:10px 12px;border-radius:3px;background-image:linear-gradient(var(--amber),var(--amber));background-size:0 2px;background-repeat:no-repeat;background-position:12px calc(100% - 6px);transition:background-size .3s var(--ease),color .2s}
 .nav a:not(.btn):hover{color:#fff;background-size:calc(100% - 24px) 2px}
 .nav .btn{margin-left:10px;min-height:44px}
+.nav a{white-space:nowrap}
+.nav a.nav__tel{color:var(--amber)}
 .top__tools{margin-left:auto;display:flex;align-items:center;gap:4px}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:3px;border:0;background:transparent;color:var(--on-deep);cursor:pointer;padding:0}
 .icon-btn:hover{color:var(--amber)}
@@ -108,7 +112,7 @@ p{margin:0}
 .burger[aria-expanded="true"] span{background:transparent}
 .burger[aria-expanded="true"] span::before{transform:translateY(7px) rotate(45deg)}
 .burger[aria-expanded="true"] span::after{transform:translateY(-7px) rotate(-45deg)}
-@media (max-width:359px){.brand__word{font-size:.95rem;letter-spacing:.035em}.brand svg{width:30px}.brand{gap:8px}}
+@media (max-width:359px){.brand__word{font-size:.95rem;letter-spacing:.035em}.brand svg{width:30px}.brand{gap:8px}.top__tools a[href^="mailto:"]{display:none}}
 @media (min-width:960px){.nav{display:flex}.top__tools{display:none}:root{--head:72px}.brand__word{font-size:1.1875rem}}
 
 /* phone menu */
@@ -220,7 +224,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
 /* contact */
 .rasykite__grid{display:grid;gap:36px}
 @media (min-width:1024px){.rasykite__grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}}
-.mail-big{display:inline-block;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,1rem + 1.4vw,1.85rem);color:var(--ink);word-break:break-all;margin:0;padding-block:6px}
+.mail-big{display:block;width:fit-content;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,1rem + 1.4vw,1.85rem);color:var(--ink);word-break:break-all;margin:0;padding-block:6px}
 .rasykite__info{display:grid;gap:14px;align-content:start}
 .rasykite__info h3{margin-top:18px}
 .todo{list-style:none;margin:0;padding:0;display:grid;gap:10px}
@@ -271,10 +275,11 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
       <a href="#paslaugos">Paslaugos</a>
       <a href="#nuotraukos">Nuotraukos</a>
       <a href="#stogas">Stogo dalys</a>
-      <a href="#rasykite">Kontaktai</a>
+      <a class="nav__tel" href="tel:+37063340465">+370 633 40465</a>
       <a class="btn btn--amber" href="#rasykite">Parašyti laišką</a>
     </nav>
     <div class="top__tools">
+      <a class="icon-btn" href="tel:+37063340465" aria-label="Skambinti +370 633 40465"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5h3l1.5 4.2-2 1.4a12 12 0 0 0 5.8 5.8l1.4-2 4.2 1.5v3a2 2 0 0 1-2.1 2A16.6 16.6 0 0 1 4.6 5.6a2 2 0 0 1 2-2.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
       <a class="icon-btn" href="mailto:stogdengyss@gmail.com" aria-label="Rašyti el. paštu stogdengyss@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.8 6.6 8.2 6.3 8.2-6.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
       <button class="icon-btn burger" type="button" aria-expanded="false" aria-controls="meniu" aria-label="Meniu"><span></span></button>
     </div>
@@ -286,6 +291,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
   <a class="menu__link" href="#stogas">Stogo dalys</a>
   <a class="menu__link" href="#rasykite">Kontaktai</a>
   <a class="btn btn--amber" href="#rasykite">Parašyti laišką</a>
+  <p class="menu__mail">Telefonas: <a href="tel:+37063340465">+370 633 40465</a></p>
   <p class="menu__mail">El. paštas: <a href="mailto:stogdengyss@gmail.com">stogdengyss@gmail.com</a></p>
 </nav>
 
@@ -295,7 +301,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
       <div class="hero__text">
         <h1 id="hero-h">Stogų dengimas ir renovacija</h1>
         <div class="hero__aside">
-          <p class="hero__lead">Šlaitiniai stogai, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos. Parašykite, kokį stogą turite, ir aptarsime darbą.</p>
+          <p class="hero__lead">Šlaitiniai stogai, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos. Dirbame visoje Lietuvoje.</p>
           <div class="hero__cta">
             <a class="btn btn--ink" href="#rasykite">Parašyti laišką</a>
             <a class="btn btn--line" href="#stogas">Pažymėti stogo dalį</a>
@@ -323,7 +329,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
       <ul class="darbai__list">
         <li class="job">
           <img src="img/s-dengimas-480.webp" srcset="img/s-dengimas-480.webp 480w, img/s-dengimas-800.webp 800w" sizes="(min-width: 1024px) 270px, (min-width: 640px) 38vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Mūrinis namas su nauja tamsia skardine stogo danga">
-          <div><h3>Šlaitinių stogų dengimas</h3><p>Naujas stogas arba senos dangos keitimas nauja.</p></div>
+          <div><h3>Šlaitinių stogų dengimas</h3><p>Naujas stogas arba senos dangos keitimas. Dengiame bet kokia danga.</p></div>
         </li>
         <li class="job">
           <img src="img/s-renovacija-480.webp" srcset="img/s-renovacija-480.webp 480w, img/s-renovacija-800.webp 800w" sizes="(min-width: 1024px) 270px, (min-width: 640px) 38vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Stogo renovacija: dalis seno šiferio nuimta, ant naujų grebėstų klojama nauja danga, prie namo pastoliai">
@@ -422,7 +428,8 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
     <div class="wrap rasykite__grid">
       <div class="rasykite__info">
         <h2 id="rasykite-h">Parašykite Gintarui</h2>
-        <p>Atsakysime el. paštu. Jei patogiau kalbėtis telefonu, palikite numerį laiške.</p>
+        <p>Skambinkite arba rašykite. Dirbame visoje Lietuvoje.</p>
+        <a class="mail-big" href="tel:+37063340465">+370 633 40465</a>
         <a class="mail-big" href="mailto:stogdengyss@gmail.com">stogdengyss@gmail.com</a>
         <h3>Ką parašyti laiške</h3>
         <ul class="todo">
@@ -479,8 +486,10 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
         <li>Įmonės kodas 306109073</li>
         <li>PVM mokėtojo kodas LT100017213717</li>
         <li>Buveinė: Palanga</li>
+        <li>Dirbame visoje Lietuvoje</li>
       </ul>
       <ul>
+        <li><a href="tel:+37063340465">+370 633 40465</a></li>
         <li><a href="mailto:stogdengyss@gmail.com">stogdengyss@gmail.com</a></li>
         <li><a href="https://www.facebook.com/people/MB-Gintaro-Stogai/61587863403168/" target="_blank" rel="noopener">Facebook puslapis</a></li>
       </ul>

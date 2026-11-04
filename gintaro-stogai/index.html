@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gintaro stogai | Stogų dengimas ir renovacija</title>
-<meta name="description" content="MB „Gintaro stogai“: šlaitinių stogų dengimas, renovacija, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos visoje Lietuvoje. Tel. +370 633 40465, stogdengyss@gmail.com.">
+<meta name="description" content="Šlaitinių stogų dengimas bet kokia danga, renovacija, šiferio keitimas, stoglangiai, skardinimo darbai. Dirbame visoje Lietuvoje. Tel. +370 633 40465.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://vasylian.com/svetaine/gintaro-stogai/">
 <meta name="theme-color" content="#0c3532">
@@ -12,22 +12,27 @@
 <meta property="og:locale" content="lt_LT">
 <meta property="og:site_name" content="Gintaro stogai">
 <meta property="og:title" content="Gintaro stogai | Stogų dengimas ir renovacija">
-<meta property="og:description" content="Šlaitinių stogų dengimas, renovacija, šiferio keitimas, stoglangiai, skardinimo darbai ir lietaus sistemos.">
+<meta property="og:description" content="Šlaitinių stogų dengimas bet kokia danga, renovacija, stoglangiai, skardinimo darbai ir lietaus sistemos. Dirbame visoje Lietuvoje.">
 <meta property="og:url" content="https://vasylian.com/svetaine/gintaro-stogai/">
 <meta property="og:image" content="https://vasylian.com/svetaine/gintaro-stogai/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Mūrinio namo stogas su pilka skardine danga ir apskardintu kaminu">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="fonts/literata-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/sourcesans3-var.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
-  "name": "Gintaro stogai, MB",
-  "alternateName": "MB „Gintaro stogai“",
+  "@id": "https://vasylian.com/svetaine/gintaro-stogai/#imone",
+  "name": "Gintaro stogai",
+  "legalName": "MB „Gintaro stogai“",
   "url": "https://vasylian.com/svetaine/gintaro-stogai/",
   "image": "https://vasylian.com/svetaine/gintaro-stogai/img/og.jpg",
   "email": "stogdengyss@gmail.com",
@@ -38,7 +43,7 @@
   "foundingDate": "2022-07-01",
   "address": {"@type": "PostalAddress", "addressLocality": "Palanga", "addressCountry": "LT"},
   "sameAs": ["https://www.facebook.com/people/MB-Gintaro-Stogai/61587863403168/"],
-  "knowsAbout": ["Šlaitinių stogų dengimas", "Stogų renovacija", "Šiferinių stogų keitimas", "Stoglangių montavimas", "Skardinimo darbai", "Lietaus nuvedimo sistemos"]
+  "knowsAbout": ["Šlaitinių stogų dengimas", "Stogų renovacija", "Šiferinių stogų keitimas", "Stoglangių montavimas", "Skardinimo darbai", "Skardos lankstiniai", "Lietaus sistemų montavimas", "Metalo konstrukcijų suvirinimas"]
 }
 </script>
 <style>
@@ -173,10 +178,11 @@ p{margin:0}
 .dalys__photo{position:relative;margin:0;background:#cfdcd9}
 .dalys__photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .pin{position:absolute;left:var(--x);top:var(--y);width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9375rem;background:#fff;color:var(--deep);box-shadow:0 0 0 2px var(--deep),0 2px 6px rgba(12,53,50,.35);cursor:pointer;user-select:none;transition:background-color .2s var(--ease),transform .25s var(--ease)}
+.pin::after{content:"";position:absolute;inset:-7px;border-radius:50%}
 .pin:hover{transform:scale(1.12)}
 .pin.is-on{background:var(--amber);color:var(--deep)}
 .pin.is-last{box-shadow:0 0 0 3px var(--deep),0 0 0 6px var(--amber),0 2px 8px rgba(12,53,50,.4);transform:scale(1.12)}
-@media (min-width:768px){.pin{width:34px;height:34px;margin:-17px 0 0 -17px;font-size:1rem}}
+@media (min-width:768px){.pin{width:34px;height:34px;margin:-17px 0 0 -17px;font-size:1rem}.pin::after{inset:-5px}}
 .dalys__photo figcaption{font-size:.9375rem;color:var(--muted);margin-top:10px}
 .dalys__ctrl{display:grid;gap:22px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
@@ -222,12 +228,33 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
 .foto__grid li.full-m{grid-column:1 / -1}
 @media (min-width:1024px){.foto__grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}.foto__grid li,.foto__grid li.full-m{grid-column:span 2}.foto__grid li.wide{grid-column:span 3}}
 
+/* how we work: three numbered steps on one leader line, his photo of the same house at work */
+.eiga{border-bottom:1px solid var(--rule)}
+.eiga__grid{display:grid;gap:36px}
+@media (min-width:1024px){.eiga__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:56px;align-items:center}}
+.eiga .sec__head{margin-bottom:clamp(24px,3.4vw,40px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.step{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:18px;align-items:start}
+.step:not(:last-child)::before{content:"";position:absolute;left:19px;top:46px;bottom:-22px;width:2px;background:var(--rule)}
+.step__n{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--amber);color:var(--deep);font-weight:700;font-size:1.0625rem;box-shadow:0 0 0 2px var(--deep)}
+.step h3{margin:7px 0 6px}
+.step p{color:var(--muted);max-width:44ch}
+.eiga__photo{margin:0}
+.eiga__photo img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#cfdcd9}
+.eiga__photo figcaption{font-size:.9375rem;color:var(--muted);margin-top:10px}
+
 /* contact */
 .rasykite__grid{display:grid;gap:36px}
 @media (min-width:1024px){.rasykite__grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}}
 .mail-big{display:block;width:fit-content;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,1rem + 1.4vw,1.85rem);color:var(--ink);word-break:break-all;margin:0;padding-block:6px}
 .rasykite__info{display:grid;gap:14px;align-content:start}
 .rasykite__info h3{margin-top:18px}
+.call{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:6px}
+.call .btn{flex:1 1 9.5rem;padding:0 18px}
+.call .btn svg{width:22px;height:22px;flex:0 0 auto}
+.vieta{list-style:none;margin:0;padding:0;display:grid;gap:2px;color:var(--text)}
+.vieta li{position:relative;padding-left:30px}
+.vieta li::before{content:"";position:absolute;left:4px;top:.5em;width:12px;height:12px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 2px var(--deep)}
 .todo{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .todo li{position:relative;padding-left:30px}
 .todo li::before{content:"";position:absolute;left:4px;top:.72em;width:14px;height:3px;background:var(--ink);border-radius:1px}
@@ -261,7 +288,9 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
 .foot ul a{display:inline-flex;align-items:center;min-height:44px}
 .foot a:hover{color:#ffbd3d}
 .foot__slogan{margin-top:12px;color:var(--on-deep-muted);font-family:var(--serif);font-weight:500;font-size:1.0625rem}
-.foot__copy{margin-top:32px;padding-top:18px;border-top:1px solid rgba(232,241,239,.14);font-size:.9375rem;color:var(--on-deep-muted)}
+.foot__copy{margin-top:32px;padding-top:8px;border-top:1px solid rgba(232,241,239,.14);font-size:.9375rem;color:var(--on-deep-muted);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px}
+.foot__copy a{display:inline-flex;align-items:center;min-height:44px}
+.foot .foot__copy p{color:var(--on-deep-muted);padding-block:10px}
 </style>
 </head>
 <body>
@@ -325,7 +354,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
     <div class="wrap">
       <div class="sec__head">
         <h2 id="darbai-h">Ką darome</h2>
-        <p class="sec__lead">Stogų dengimas, renovacija ir kiti statybos darbai.</p>
+        <p class="sec__lead">Šlaitiniai stogai su bet kokia danga, renovacija ir kiti statybos darbai.</p>
       </div>
       <ul class="darbai__list">
         <li class="job">
@@ -338,7 +367,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
         </li>
         <li class="job">
           <img src="img/s-stoglangiai-480.webp" srcset="img/s-stoglangiai-480.webp 480w, img/s-stoglangiai-800.webp 800w" sizes="(min-width: 1024px) 270px, (min-width: 640px) 38vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Raudona skardinė stogo danga su dviem stoglangiais">
-          <div><h3>Stoglangiai</h3><p>Stoglangių montavimas naujame stoge ir keitimas sename.</p></div>
+          <div><h3>Stoglangiai</h3><p>Stoglangių montavimas šlaitiniame stoge.</p></div>
         </li>
         <li class="job">
           <img src="img/s-skarda-480.webp" srcset="img/s-skarda-480.webp 480w, img/s-skarda-800.webp 800w" sizes="(min-width: 1024px) 270px, (min-width: 640px) 38vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Valcuotos skardos stogas su apskardintu parapetu">
@@ -350,7 +379,7 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
         </li>
         <li class="job">
           <img src="img/s-kiti-480.webp" srcset="img/s-kiti-480.webp 480w, img/s-kiti-800.webp 800w" sizes="(min-width: 1024px) 270px, (min-width: 640px) 38vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Medinis priestato karkasas po nauju stogo pagrindu">
-          <div><h3>Kiti statybos darbai</h3><p>Metalo konstrukcijų suvirinimas, karkasai ir kiti darbai prie namo.</p></div>
+          <div><h3>Kiti statybos darbai</h3><p>Metalo konstrukcijų suvirinimas ir įvairūs statybos darbai.</p></div>
         </li>
       </ul>
     </div>
@@ -368,6 +397,25 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
         <li class="wide"><figure><div class="ph"><img src="img/g-pries-480.webp" srcset="img/g-pries-480.webp 480w, img/g-pries-800.webp 800w" sizes="(min-width: 1024px) 590px, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Pusė stogo jau su nauja tamsia danga, kitoje pusėje lentjuostės ant plėvelės, ant pastolių dirba meistras"><span class="gpin" style="--x:62%;--y:38%" aria-hidden="true">4</span></div><figcaption><span class="cap__n" aria-hidden="true">4</span><span>2020 m. balandžio 8 d.: senoji danga nuimta, klojama nauja</span></figcaption></figure></li>
         <li class="wide"><figure><div class="ph"><img src="img/g-po-480.webp" srcset="img/g-po-480.webp 480w, img/g-po-800.webp 800w" sizes="(min-width: 1024px) 590px, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Tas pats namas su nauja pilka stogo danga"><span class="gpin" style="--x:55%;--y:34%" aria-hidden="true">5</span></div><figcaption><span class="cap__n" aria-hidden="true">5</span><span>Balandžio 27 d.: tas pats namas su nauja danga</span></figcaption></figure></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="sec eiga" id="eiga" aria-labelledby="eiga-h">
+    <div class="wrap eiga__grid">
+      <div>
+        <div class="sec__head">
+          <h2 id="eiga-h">Kaip dirbame</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__n" aria-hidden="true">1</span><div><h3>Paskambinkite arba parašykite</h3><p>Pasakykite, kur yra namas, kokia dabar danga ir ką norite daryti. Jei galite, atsiųskite stogo nuotraukų.</p></div></li>
+          <li class="step"><span class="step__n" aria-hidden="true">2</span><div><h3>Suderiname darbus</h3><p>Aptariame, ką reikia daryti, kokia danga tinka, kiek tai kainuos ir kada galime pradėti.</p></div></li>
+          <li class="step"><span class="step__n" aria-hidden="true">3</span><div><h3>Atvykstame ir dirbame</h3><p>Atvažiuojame pas jus bet kurioje Lietuvos vietoje ir atliekame sutartus darbus.</p></div></li>
+        </ol>
+      </div>
+      <figure class="eiga__photo">
+        <img src="img/eiga-800.webp" srcset="img/eiga-480.webp 480w, img/eiga-800.webp 800w" sizes="(min-width: 1296px) 480px, (min-width: 1024px) 38vw, calc(100vw - 32px)" width="800" height="600" loading="lazy" decoding="async" alt="Namo frontonas su tamsiomis vėjalentėmis, prie sienos pastoliai ir kopėčios, virš pirmo aukšto langų klojamos lentos">
+        <figcaption>Tas pats namas kaip 3, 4 ir 5 nuotraukose, tik iš kitos pusės. Darbai vyksta.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -430,9 +478,17 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
     <div class="wrap rasykite__grid">
       <div class="rasykite__info">
         <h2 id="rasykite-h">Parašykite Gintarui</h2>
-        <p>Skambinkite arba rašykite. Dirbame visoje Lietuvoje.</p>
+        <p>Skambinkite, rašykite per WhatsApp arba el.&nbsp;paštu.</p>
         <a class="mail-big" href="tel:+37063340465">+370 633 40465</a>
+        <div class="call">
+          <a class="btn btn--ink" href="tel:+37063340465"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5h3l1.5 4.2-2 1.4a12 12 0 0 0 5.8 5.8l1.4-2 4.2 1.5v3a2 2 0 0 1-2.1 2A16.6 16.6 0 0 1 4.6 5.6a2 2 0 0 1 2-2.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Skambinti</a>
+          <a class="btn btn--line btn--wa" href="https://wa.me/37063340465" target="_blank" rel="noopener" aria-label="Rašyti per WhatsApp +370 633 40465"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a>
+        </div>
         <a class="mail-big" href="mailto:stogdengyss@gmail.com">stogdengyss@gmail.com</a>
+        <ul class="vieta">
+          <li>Dirbame visoje Lietuvoje</li>
+          <li>Buveinė: Palanga</li>
+        </ul>
         <h3>Ką parašyti laiške</h3>
         <ul class="todo">
           <li>Kur yra namas: miestas ar kaimas.</li>
@@ -493,10 +549,11 @@ legend{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink
       <ul>
         <li><a href="tel:+37063340465">+370 633 40465</a></li>
         <li><a href="mailto:stogdengyss@gmail.com">stogdengyss@gmail.com</a></li>
+        <li><a href="https://wa.me/37063340465" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><a href="https://www.facebook.com/people/MB-Gintaro-Stogai/61587863403168/" target="_blank" rel="noopener">Facebook puslapis</a></li>
       </ul>
     </div>
-    <p class="foot__copy">© 2026 MB „Gintaro stogai“</p>
+    <div class="foot__copy"><p>© 2026 MB „Gintaro stogai“</p><a href="privatumo-politika.html">Privatumo politika</a></div>
   </div>
 </footer>
 

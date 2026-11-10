@@ -25,9 +25,19 @@
 <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/archivo-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<script>(function(d){d.className='js pre';try{if(sessionStorage.getItem('vildesta-intro')==='1')d.classList.add('no-intro')}catch(e){}setTimeout(function(){d.classList.add('is-ready');d.classList.remove('pre')},4500)})(document.documentElement);</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Vildesta", "legalName": "UAB „Vildesta“", "description": "Statybos, remonto ir apdailos darbai Elektrėnuose ir apylinkėse.", "url": "https://vasylian.com/svetaine/vildesta/", "image": "https://vasylian.com/svetaine/vildesta/img/og.jpg", "telephone": "+37061424433", "email": "infovildesta@gmail.com", "foundingDate": "2024-12-12", "identifier": {"@type": "PropertyValue", "name": "Įmonės kodas", "value": "307043968"}, "address": {"@type": "PostalAddress", "addressLocality": "Elektrėnai", "addressCountry": "LT"}, "areaServed": {"@type": "City", "name": "Elektrėnai"}}</script>
 </head>
 <body>
+
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-in">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+    <span class="intro-name"><span>Vildesta</span></span>
+  </div>
+</div>
 
 <header class="head wrap" id="virsus">
   <a class="brand" href="#virsus" aria-label="Vildesta, į puslapio pradžią">
@@ -43,51 +53,77 @@
   <a class="btn head-call" href="tel:+37061424433" aria-label="Skambinti +370 614 24433"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4.2-2 1.4a12 12 0 0 0 6.6 6.6l1.4-2 4.2 1.6V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>Skambinti</span><span class="long">+370 614 24433</span></a>
 </header>
 
+<div class="bar" id="bar">
+  <a class="brand" href="#virsus" aria-label="Vildesta, į puslapio pradžią" tabindex="-1">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+    <span class="brand-name">Vildesta</span>
+  </a>
+  <nav aria-label="Puslapio skyriai, viršutinė juosta">
+    <a href="#paslaugos" tabindex="-1">Paslaugos</a>
+    <a href="#nuotraukos" tabindex="-1">Nuotraukos</a>
+    <a href="#eiga" tabindex="-1">Kaip dirbame</a>
+    <a href="#kontaktai" tabindex="-1">Kontaktai</a>
+  </nav>
+  <a class="btn" href="tel:+37061424433" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4.2-2 1.4a12 12 0 0 0 6.6 6.6l1.4-2 4.2 1.6V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+370 614 24433</a>
+</div>
+
 <main>
 <section class="hero wrap" aria-labelledby="h1">
   <div class="hero-text">
     <p class="kicker">UAB „Vildesta“, Elektrėnai</p>
-    <h1 id="h1">Statybos ir remonto darbai Elektrėnuose</h1>
+    <h1 id="h1"><span class="ln"><span>Statybos ir</span></span> <span class="ln"><span>remonto darbai</span></span> <span class="ln"><span>Elektrėnuose</span></span></h1>
     <p class="lead">Statome, remontuojame ir atliekame apdailą. Paskambinkite, aptarsime jūsų objektą.</p>
     <div class="hero-actions">
-      <a class="btn" href="tel:+37061424433"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4.2-2 1.4a12 12 0 0 0 6.6 6.6l1.4-2 4.2 1.6V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Skambinti +370 614 24433</a>
-      <a class="btn btn-line" href="#kontaktai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="M4 7l8 6.5L20 7"/></svg>Parašyti</a>
+      <a class="btn mag" href="tel:+37061424433"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4.2-2 1.4a12 12 0 0 0 6.6 6.6l1.4-2 4.2 1.6V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Skambinti +370 614 24433</a>
+      <a class="btn btn-line mag" href="#kontaktai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="M4 7l8 6.5L20 7"/></svg>Parašyti</a>
     </div>
   </div>
-  <div class="wall hero-wall">
-    <a class="brick" href="img/g/01.webp" data-open="01"><img src="img/g/01-t.webp" width="900" height="600" alt="Statomo namo sienos iš blokelių su lango anga" style="object-position:50% 55%" decoding="async" fetchpriority="high"></a>
-    <a class="brick" href="img/g/02.webp" data-open="02"><img src="img/g/02-t.webp" width="900" height="506" alt="Mūrijama keraminių blokelių siena" style="object-position:35% 45%" decoding="async"></a>
-    <a class="brick" href="img/g/03.webp" data-open="03"><img src="img/g/03-t.webp" width="900" height="600" alt="Glaistoma ir lyginama siena" style="object-position:55% 45%" decoding="async"></a>
-    <a class="brick" href="img/g/05.webp" data-open="05"><img src="img/g/05-t.webp" width="900" height="541" alt="Dviejų aukštų namai su garažais" style="object-position:50% 45%" decoding="async"></a>
-    <a class="brick" href="img/g/07.webp" data-open="07"><img src="img/g/07-t.webp" width="900" height="599" alt="Pamatai ir pirmosios blokelių sienų eilės" style="object-position:50% 60%" decoding="async"></a>
-    <a class="brick" href="img/g/04.webp" data-open="04"><img src="img/g/04-t.webp" width="900" height="600" alt="Klojamos didelio formato plytelės" style="object-position:65% 55%" decoding="async"></a>
+  <div class="hero-wall">
+    <div class="row"><a class="brick w62" href="img/g/01.webp" data-open="01"><img src="img/g/01-t.webp" width="900" height="600" alt="Statomo namo sienos iš blokelių su lango anga" style="object-position:50% 55%" decoding="async" fetchpriority="high"></a><a class="brick w38" href="img/g/02.webp" data-open="02"><img src="img/g/02-t.webp" width="900" height="506" alt="Mūrijama keraminių blokelių siena" style="object-position:35% 45%" decoding="async"></a></div>
+    <div class="row"><a class="brick w38" href="img/g/03.webp" data-open="03"><img src="img/g/03-t.webp" width="900" height="600" alt="Glaistoma ir lyginama siena" style="object-position:55% 45%" decoding="async"></a><a class="brick w62" href="img/g/05.webp" data-open="05"><img src="img/g/05-t.webp" width="900" height="541" alt="Dviejų aukštų namai su garažais" style="object-position:50% 45%" decoding="async"></a></div>
+    <div class="row"><a class="brick w62" href="img/g/07.webp" data-open="07"><img src="img/g/07-t.webp" width="900" height="599" alt="Pamatai ir pirmosios blokelių sienų eilės" style="object-position:50% 60%" decoding="async"></a><a class="brick w38" href="img/g/04.webp" data-open="04"><img src="img/g/04-t.webp" width="900" height="600" alt="Klojamos didelio formato plytelės" style="object-position:65% 55%" decoding="async"></a></div>
   </div>
+  <ul class="hero-meta">
+    <li>Elektrėnai ir apylinkės</li>
+    <li>Statyba, remontas, apdaila</li>
+    <li>Įmonės kodas 307043968</li>
+  </ul>
 </section>
+
+<div class="band" aria-hidden="true">
+  <div class="band-track" id="band">
+    <div class="band-half"><span>Statyba</span><i></i><span class="o">Remontas</span><i></i><span>Apdaila</span><i></i><span class="o">Elektrėnai</span><i></i><span>Statyba</span><i></i><span class="o">Remontas</span><i></i><span>Apdaila</span><i></i><span class="o">Elektrėnai</span><i></i></div>
+    <div class="band-half"><span>Statyba</span><i></i><span class="o">Remontas</span><i></i><span>Apdaila</span><i></i><span class="o">Elektrėnai</span><i></i><span>Statyba</span><i></i><span class="o">Remontas</span><i></i><span>Apdaila</span><i></i><span class="o">Elektrėnai</span><i></i></div>
+  </div>
+</div>
 
 <section class="sec wrap" id="paslaugos" aria-labelledby="h-paslaugos">
   <div class="sec-head">
     <span class="mark" aria-hidden="true"></span>
     <h2 id="h-paslaugos">Paslaugos</h2>
   </div>
-  <div class="courses">
-    <article class="course">
+  <div class="stack">
+    <article class="course" style="--i:0">
       <div class="course-text">
         <h3>Statybos darbai</h3>
         <p>Atliekame statybos darbus nuo pirmo pokalbio iki sutvarkyto objekto. Papasakokite, ką planuojate, ir pasakysime, kaip galime padėti.</p>
+        <a class="more" href="#kontaktai">Aptarti darbus<span class="more-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <div class="brick"><img src="img/s-statyba.webp" width="1400" height="791" alt="Statybų aikštelė: pamatai ir blokelių sienos" loading="lazy" decoding="async"></div>
     </article>
-    <article class="course">
+    <article class="course" style="--i:1">
       <div class="course-text">
         <h3>Remontas ir renovacija</h3>
         <p>Remontuojame ir atnaujiname patalpas bei pastatus. Prieš pradėdami aptariame darbų apimtį ir eigą.</p>
+        <a class="more" href="#kontaktai">Aptarti darbus<span class="more-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <div class="brick"><img src="img/s-remontas.webp" width="1400" height="841" alt="Remontuojamas šviesus kambarys" loading="lazy" decoding="async"></div>
     </article>
-    <article class="course">
+    <article class="course" style="--i:2">
       <div class="course-text">
         <h3>Apdailos darbai</h3>
         <p>Atliekame apdailos darbus. Dirbame tvarkingai, kad rezultatu būtų malonu naudotis kasdien.</p>
+        <a class="more" href="#kontaktai">Aptarti darbus<span class="more-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <div class="brick"><img src="img/s-apdaila.webp" width="1400" height="982" alt="Klojamos grindų plytelės" loading="lazy" decoding="async"></div>
     </article>
@@ -95,12 +131,12 @@
 </section>
 
 <section class="sec why" id="kodel" aria-labelledby="h-kodel">
-  <div class="wrap">
-    <div class="sec-head">
+  <div class="wrap why-in">
+    <div class="sec-head why-head">
       <span class="mark" aria-hidden="true"></span>
       <h2 id="h-kodel">Kodėl mes</h2>
     </div>
-    <ul class="why-grid">
+    <ul class="why-list">
       <li><h3>Kalbate tiesiai su mumis</h3><p>Atsiliepia žmogus, kuris pats rūpinasi jūsų objektu.</p></li>
       <li><h3>Viską aptariame iš anksto</h3><p>Prieš pradėdami darbus sutariame dėl apimties, kainos ir terminų.</p></li>
       <li><h3>Esame vietiniai</h3><p>Dirbame Elektrėnuose ir apylinkėse, todėl atvykti apžiūrėti objekto mums netoli.</p></li>
@@ -143,6 +179,7 @@
     <h2 id="h-eiga">Kaip dirbame</h2>
   </div>
   <div class="steps-wrap">
+    <span class="steps-line" aria-hidden="true"></span>
     <ol class="steps">
       <li><span class="num" aria-hidden="true">1</span><h3>Susisiekiate</h3><p>Paskambinate arba parašote ir trumpai papasakojate, ko reikia.</p></li>
       <li><span class="num" aria-hidden="true">2</span><h3>Apžiūrime ir įvertiname</h3><p>Atvykstame į objektą, apžiūrime ir pateikiame pasiūlymą.</p></li>
@@ -151,44 +188,42 @@
   </div>
 </section>
 
-<section class="sec contact" id="kontaktai" aria-labelledby="h-kontaktai">
-  <div class="wrap contact-grid">
-    <div>
-      <span class="mark" aria-hidden="true"></span>
-      <h2 id="h-kontaktai">Papasakokite apie savo objektą</h2>
-      <a class="tel-big" href="tel:+37061424433">+370 614 24433</a>
-      <ul class="facts">
-        <li><a href="mailto:infovildesta@gmail.com">infovildesta@gmail.com</a></li>
-        <li>Elektrėnai</li>
-        <li class="small">UAB „Vildesta“, įmonės kodas 307043968</li>
-      </ul>
+<section class="contact" id="kontaktai" aria-labelledby="h-kontaktai">
+  <div class="contact-panel">
+    <div class="wrap contact-grid">
+      <div class="contact-text">
+        <span class="mark" aria-hidden="true"></span>
+        <h2 id="h-kontaktai">Papasakokite apie savo objektą</h2>
+        <a class="tel-big mag" href="tel:+37061424433"><span class="tel-in">+370 614 24433</span></a>
+        <ul class="facts">
+          <li><a href="mailto:infovildesta@gmail.com">infovildesta@gmail.com</a></li>
+          <li>Elektrėnai</li>
+          <li class="small">UAB „Vildesta“, įmonės kodas 307043968</li>
+        </ul>
+      </div>
+      <form class="form" id="uzklausa" action="mailto:infovildesta@gmail.com" method="post" enctype="text/plain" novalidate>
+        <label>Vardas<input name="Vardas" type="text" autocomplete="name" maxlength="80" required></label>
+        <label>Telefonas<input name="Telefonas" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" required></label>
+        <label>Trumpai apie darbus<textarea name="Darbai" maxlength="1500" required></textarea></label>
+        <p class="err" id="form-err" role="alert" hidden></p>
+        <button class="btn btn-dark" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="M4 7l8 6.5L20 7"/></svg>Parašyti laišką</button>
+        <p class="hint">Atsidarys jūsų el. pašto programa su paruoštu laišku. Beliks paspausti „Siųsti“.</p>
+      </form>
     </div>
-    <form class="form" id="uzklausa" action="mailto:infovildesta@gmail.com" method="post" enctype="text/plain" novalidate>
-      <label>Vardas<input name="Vardas" type="text" autocomplete="name" maxlength="80" required></label>
-      <label>Telefonas<input name="Telefonas" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" required></label>
-      <label>Trumpai apie darbus<textarea name="Darbai" maxlength="1500" required></textarea></label>
-      <p class="err" id="form-err" role="alert" hidden></p>
-      <button class="btn btn-dark" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="M4 7l8 6.5L20 7"/></svg>Parašyti laišką</button>
-      <p class="hint">Atsidarys jūsų el. pašto programa su paruoštu laišku. Beliks paspausti „Siųsti“.</p>
-    </form>
   </div>
 </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-row">
-    <div>
-      <a class="brand" href="#virsus" aria-label="Vildesta, į puslapio pradžią">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="brand-name">Vildesta</span>
-      </a>
-      <p>© 2026 UAB „Vildesta“. Įmonės kodas 307043968. Elektrėnai.</p>
-    </div>
+    <p>© 2026 UAB „Vildesta“. Įmonės kodas 307043968. Elektrėnai.</p>
     <p class="foot-links">
       <a href="tel:+37061424433">+370 614 24433</a>
       <a href="mailto:infovildesta@gmail.com">infovildesta@gmail.com</a>
+      <a href="#virsus">Į viršų</a>
     </p>
   </div>
+  <p class="foot-big" aria-hidden="true"><span>Vildesta</span></p>
 </footer>
 
 <div class="dock" id="dock">
@@ -196,10 +231,12 @@
   <a class="btn btn-white" href="#kontaktai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="M4 7l8 6.5L20 7"/></svg>Rašyti</a>
 </div>
 
+<div class="cursor" id="cursor" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div>
+
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Nuotraukų peržiūra" aria-hidden="true">
   <div class="lb-top">
     <p class="lb-info"><span class="lb-count" id="lb-count"></span><span class="lb-cap" id="lb-cap"></span></p>
-    <button class="lb-btn" id="lb-close" type="button" aria-label="Uždaryti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lb-btn" id="lb-close" type="button" aria-label="Uždaryti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
   <div class="lb-stage" id="lb-stage"><img id="lb-img" alt="" decoding="async"></div>
   <div class="lb-nav">
@@ -208,6 +245,11 @@
   </div>
 </div>
 
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/SplitText.min.js" defer></script>
+<script src="js/vendor/Flip.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

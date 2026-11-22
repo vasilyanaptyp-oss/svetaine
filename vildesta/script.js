@@ -158,8 +158,11 @@
     var id = a.getAttribute('href').slice(1), target = id ? document.getElementById(id) : null;
     if (!target) { return; }
     e.preventDefault();
-    if (lenis) { lenis.scrollTo(target, { duration: 1.2 }); }
-    else { target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); }
+    /* kylant aukstyn virsutine juosta vel matoma, todel paliekame jai vietos */
+    var bar = document.querySelector('.top');
+    var off = (target.getBoundingClientRect().top < 0 && bar) ? -bar.offsetHeight : 0;
+    if (lenis) { lenis.scrollTo(target, { duration: 1.2, offset: off }); }
+    else { window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset + off, behavior: reduce ? 'auto' : 'smooth' }); }
   });
 
   /* ================= judesys ================= */
